@@ -1,0 +1,8 @@
+#THE UNBOUND BIBLE (www.unboundbible.org)
+#name	Hebrew OT: Westminster Leningrad Codex
+#filetype	Unmapped-BCVS
+#copyright	
+#abbreviation	
+#language	hbo
+#note	
+#columns	orig_book_index	orig_chapter	orig_verse	orig_subverse	order_by	text
