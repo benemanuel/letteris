@@ -3,7 +3,7 @@ Letteris Hebrew Bible UTF8
 
 
 #Torah
-Genesis Done from begining until 3:13  - Avi Benemanuel
+Genesis Done from begining until 5:1  - Avi Benemanuel
 Exodus 
 Leviticus 
 Numbers 
