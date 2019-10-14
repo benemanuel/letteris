@@ -42,6 +42,12 @@ Psalms Chap 24 Gilles Tiar
 Psalms Chap 67 Gilles Tiar 
 Psalms Chap 96 Gilles Tiar 
 Psalms Chap 100 Gilles Tiar 
+Psalms Chap 103 Gilles Tiar 
+Psalms Chap 122 Gilles Tiar 
+Psalms Chap 131 Gilles Tiar 
+Psalms Chap 133 Gilles Tiar 
+Psalms Chap 148 Gilles Tiar 
+Psalms Chap 150 Gilles Tiar 
 Proverbs 
 Job 
 
