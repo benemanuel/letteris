@@ -1,7 +1,7 @@
 # letteris
 Letteris Hebrew Bible UTF8
 
-#More information in the file wiki_page.txt
+#More information see project's wiki
 
 
 #Torah
