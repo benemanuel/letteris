@@ -1,4 +1,4 @@
 @echo off
 cd Tools
-backtogether.bat
+call backtogether.bat
 cd ..
