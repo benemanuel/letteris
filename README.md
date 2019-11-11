@@ -38,6 +38,7 @@ Letteris Hebrew Bible UTF8
 
 #Ketuvim
 - Psalms C1 Gilles Tiar 
+C3 Gilles Tiar
 C19 Gilles Tiar 
 C23 Gilles Tiar 
 C24 Gilles Tiar 
