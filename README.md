@@ -5,7 +5,7 @@ Letteris Hebrew Bible UTF8
 
 
 #Torah
-- Genesis 1:1-27:30 Avi Benemanuel ,22:1-22:19 Gilles Tiar
+- Genesis 1:1-27:30 Avi Benemanuel ;22:1-22:19 Gilles Tiar
 - Exodus 
 - Leviticus 
 - Numbers 
@@ -37,21 +37,21 @@ Letteris Hebrew Bible UTF8
 - Malachi 
 
 #Ketuvim
-- Psalms C1 Gilles Tiar 
-C3 Gilles Tiar
-C19 Gilles Tiar 
-C23 Gilles Tiar 
-C24 Gilles Tiar 
-C67 Gilles Tiar 
-C96 Gilles Tiar 
-C100 Gilles Tiar 
-C103 Gilles Tiar 
-C121 Gilles Tiar 
-C122 Gilles Tiar 
-C131 Gilles Tiar 
-C133 Gilles Tiar 
-C148 Gilles Tiar 
-C150 Gilles Tiar 
+- Psalms C1 Gilles Tiar; 
+C3 Gilles Tiar;
+C19 Gilles Tiar; 
+C23 Gilles Tiar;
+C24 Gilles Tiar;
+C67 Gilles Tiar; 
+C96 Gilles Tiar; 
+C100 Gilles Tiar; 
+C103 Gilles Tiar; 
+C121 Gilles Tiar; 
+C122 Gilles Tiar; 
+C131 Gilles Tiar; 
+C133 Gilles Tiar; 
+C148 Gilles Tiar; 
+C150 Gilles Tiar; 
 - Proverbs 
 - Job 
 
