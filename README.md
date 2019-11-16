@@ -5,7 +5,7 @@ Letteris Hebrew Bible UTF8
 
 
 #Torah
-- Genesis 1:1-29:11 Avi Benemanuel ,22:1-22:19 Gilles Tiar
+- Genesis 1:1-30:37 Avi Benemanuel ,22:1-22:19 Gilles Tiar
 - Exodus 
 - Leviticus 
 - Numbers 
