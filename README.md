@@ -6,7 +6,7 @@ Letteris Hebrew Bible UTF8
 
 #Torah
 - Genesis done  Avi Benemanuel ,22:1-22:19 Gilles Tiar
-- Exodus until 24:8 Avi Benemanuel
+- Exodus until 25:23 Avi Benemanuel
 - Leviticus 
 - Numbers 
 - Deuteronomy 6:4-6:9 Gilles Tiar
