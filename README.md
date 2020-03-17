@@ -8,7 +8,7 @@ Letteris Hebrew Bible UTF8
 - Genesis done  Avi Benemanuel ,22:1-22:19 Gilles Tiar
 - Exodus done Avi Benemanuel
 - Leviticus done  
-- Numbers until 22:2
+- Numbers until 22:28
 - Deuteronomy 6:4-6:9 Gilles Tiar
 
 #Neviim
