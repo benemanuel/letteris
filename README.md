@@ -8,8 +8,8 @@ Letteris Hebrew Bible UTF8
 - Genesis done  Avi Benemanuel ,22:1-22:19 Gilles Tiar
 - Exodus done Avi Benemanuel
 - Leviticus done  
-- Numbers until 36:1
-- Deuteronomy 6:4-6:9 Gilles Tiar
+- Numbers done
+- Deuteronomy until 1:1 ,6:4-6:9 Gilles Tiar 
 
 #Neviim
 - Joshua 
