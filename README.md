@@ -9,7 +9,7 @@ Letteris Hebrew Bible UTF8
 - Exodus done Avi Benemanuel
 - Leviticus done  
 - Numbers done
-- Deuteronomy until 12:6 ,6:4-6:9 Gilles Tiar 
+- Deuteronomy until 12:22 ,6:4-6:9 Gilles Tiar 
 
 #Neviim
 - Joshua 
