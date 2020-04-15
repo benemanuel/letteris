@@ -9,10 +9,10 @@ Letteris Hebrew Bible UTF8
 - Exodus done Avi Benemanuel
 - Leviticus done  
 - Numbers done
-- Deuteronomy until 27:3 ,6:4-6:9 Gilles Tiar 
+- Deuteronomy done ,6:4-6:9 Gilles Tiar 
 
 #Neviim
-- Joshua 
+- Joshua until 1:1 
 - Judges 
 - 1Samuel 
 - 2Samuel 
