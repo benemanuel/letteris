@@ -1,39 +1,39 @@
-01O	Genesis
-02O	Exodus
-03O	Leviticus
-04O	Numbers
-05O	Deuteronomy
-06O	Joshua
-07O	Judges
-08O	Ruth
-09O	1Samuel
-10O	2Samuel
-11O	1Kings
-12O	2Kings
-13O	1Chronicles
-14O	2Chronicles
-15O	Ezra
-16O	Nehemiah
-17O	Esther
-18O	Job
-19O	Psalms
-20O	Proverbs
-21O	Ecclesiastes
-22O	Sos
-23O	Isaiah
-24O	Jeremiah
-25O	Lamentations
-26O	Ezekiel
-27O	Daniel
-28O	Hosea
-29O	Joel
-30O	Amos
-31O	Obadiah
-32O	Jonah
-33O	Micah
-34O	Nahum
-35O	Habakkuk
-36O	Zephaniah
-37O	Haggai
-38O	Zechariah
-39O	Malachi
+01O	Genesis	בראשית
+02O	Exodus	שמות
+03O	Leviticus	ויקרא
+04O	Numbers	במדבר
+05O	Deuteronomy	דברים
+06O	Joshua	יהושע
+07O	Judges	שופטים
+08O	Ruth	רות
+09O	1Samuel	שמואל_א
+10O	2Samuel	שמואל_ב
+11O	1Kings	מלאכים_א
+12O	2Kings	מלאכים_ב
+13O	1Chronicles	דברי_הימים_א
+14O	2Chronicles	דברי_הימים_ב
+15O	Ezra	עזרא
+16O	Nehemiah	נחמיה
+17O	Esther	מגילת_אסתר
+18O	Job	איוב
+19O	Psalms	תהילים
+20O	Proverbs	משלי
+21O	Ecclesiastes	קהלת
+22O	Sos	שיר_השירים
+23O	Isaiah	ישעיהו
+24O	Jeremiah	ירמיהו
+25O	Lamentations	מגילת_איכה
+26O	Ezekiel	יחזקאל
+27O	Daniel	דניאל
+28O	Hosea	הושע
+29O	Joel	יואל
+30O	Amos	עמוס
+31O	Obadiah	עובדיה
+32O	Jonah	יונה
+33O	Micah	מיכה
+34O	Nahum	נחום
+35O	Habakkuk	חבקוק
+36O	Zephaniah	צפניה
+37O	Haggai	חגי
+38O	Zechariah	זכריה
+39O	Malachi	מלאכי
