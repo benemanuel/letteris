@@ -1,4 +1,5 @@
 @echo off
+echo html %1
 copy head.h temp\%1.html
 echo  %1 %2 >> temp\%1.html
 echo ^</br^> ^</h2^> >> temp\%1.html
