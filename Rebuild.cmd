@@ -1,5 +1,7 @@
 @echo off
 echo rebuild
 cd Tools
-call backtogether.bat
+backtogether.bat
+del %date%.tmp /q
 cd ..
+del %date%.tmp /q
