@@ -6,13 +6,13 @@ Letteris Hebrew Bible UTF8
 
 #Torah
 - Genesis done  Avi Benemanuel ,22:1-22:19 Gilles Tiar
-- Exodus done Avi Benemanuel
+- Exodus done 
 - Leviticus done  
 - Numbers done
 - Deuteronomy done ,6:4-6:9 Gilles Tiar 
 
 #Neviim
-- Joshua until 5:1 
+- Joshua until 6:23 
 - Judges 
 - 1Samuel 
 - 2Samuel 
