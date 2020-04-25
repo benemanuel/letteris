@@ -12,7 +12,7 @@ Letteris Hebrew Bible UTF8
 - Deuteronomy done ,6:4-6:9 Gilles Tiar 
 
 #Neviim
-- Joshua until 6:23 
+- Joshua until 8:10 
 - Judges 
 - 1Samuel 
 - 2Samuel 
