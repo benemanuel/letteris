@@ -1,0 +1,45 @@
+--2020-05-09 14:02:58--  https://geulah.org.il/test
+Resolving geulah.org.il (geulah.org.il)... 37.139.27.34
+Connecting to geulah.org.il (geulah.org.il)|37.139.27.34|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://geulah.org.il/test/ [following]
+--2020-05-09 14:02:58--  https://geulah.org.il/test/
+Reusing existing connection to geulah.org.il:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 1714 (1.7K) [text/html]
+Saving to: 'c:/temp/God/09-May-20/2.html'
+
+     0K .                                                     100% 3.34M=0s
+
+2020-05-09 14:02:58 (3.34 MB/s) - 'c:/temp/God/09-May-20/2.html' saved [1714/1714]
+
+--2020-05-09 14:06:19--  https://geulah.org.il/test
+Resolving geulah.org.il (geulah.org.il)... 37.139.27.34
+Connecting to geulah.org.il (geulah.org.il)|37.139.27.34|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://geulah.org.il/test/ [following]
+--2020-05-09 14:06:20--  https://geulah.org.il/test/
+Reusing existing connection to geulah.org.il:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 1606 (1.6K) [text/html]
+Saving to: 'c:/temp/God/09-May-20/3.html'
+
+     0K .                                                     100% 11.5M=0s
+
+2020-05-09 14:06:20 (11.5 MB/s) - 'c:/temp/God/09-May-20/3.html' saved [1606/1606]
+
+--2020-05-09 14:16:05--  https://geulah.org.il/test
+Resolving geulah.org.il (geulah.org.il)... 37.139.27.34
+Connecting to geulah.org.il (geulah.org.il)|37.139.27.34|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://geulah.org.il/test/ [following]
+--2020-05-09 14:16:05--  https://geulah.org.il/test/
+Reusing existing connection to geulah.org.il:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 1624 (1.6K) [text/html]
+Saving to: 'c:/temp/God/09-May-20/4.html'
+
+     0K .                                                     100% 4.93M=0s
+
+2020-05-09 14:16:05 (4.93 MB/s) - 'c:/temp/God/09-May-20/4.html' saved [1624/1624]
+
