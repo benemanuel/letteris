@@ -13,7 +13,7 @@ Letteris Hebrew Bible UTF8
 
 #Neviim
 - Joshua done
-- Judges until 1:16
+- Judges until 4:16
 - 1Samuel 
 - 2Samuel 
 - 1Kings 
