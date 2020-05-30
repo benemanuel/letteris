@@ -43,3 +43,48 @@ Saving to: 'c:/temp/God/09-May-20/4.html'
 
 2020-05-09 14:16:05 (4.93 MB/s) - 'c:/temp/God/09-May-20/4.html' saved [1624/1624]
 
+--2020-05-30 14:37:41--  https://geulah.org.il/test
+Resolving geulah.org.il (geulah.org.il)... 37.139.27.34
+Connecting to geulah.org.il (geulah.org.il)|37.139.27.34|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://geulah.org.il/test/ [following]
+--2020-05-30 14:37:42--  https://geulah.org.il/test/
+Reusing existing connection to geulah.org.il:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 1625 (1.6K) [text/html]
+Saving to: 'c:/temp/God/30-May-20/1.html'
+
+     0K .                                                     100% 3.92M=0s
+
+2020-05-30 14:37:42 (3.92 MB/s) - 'c:/temp/God/30-May-20/1.html' saved [1625/1625]
+
+--2020-05-30 14:38:46--  https://geulah.org.il/test
+Resolving geulah.org.il (geulah.org.il)... 37.139.27.34
+Connecting to geulah.org.il (geulah.org.il)|37.139.27.34|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://geulah.org.il/test/ [following]
+--2020-05-30 14:38:47--  https://geulah.org.il/test/
+Reusing existing connection to geulah.org.il:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 2024 (2.0K) [text/html]
+Saving to: 'c:/temp/God/30-May-20/2.html'
+
+     0K .                                                     100% 2.93M=0.001s
+
+2020-05-30 14:38:47 (2.93 MB/s) - 'c:/temp/God/30-May-20/2.html' saved [2024/2024]
+
+--2020-05-30 15:06:38--  https://geulah.org.il/test
+Resolving geulah.org.il (geulah.org.il)... 37.139.27.34
+Connecting to geulah.org.il (geulah.org.il)|37.139.27.34|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://geulah.org.il/test/ [following]
+--2020-05-30 15:06:38--  https://geulah.org.il/test/
+Reusing existing connection to geulah.org.il:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 1611 (1.6K) [text/html]
+Saving to: 'c:/temp/God/30-May-20/3.html'
+
+     0K .                                                     100% 4.93M=0s
+
+2020-05-30 15:06:38 (4.93 MB/s) - 'c:/temp/God/30-May-20/3.html' saved [1611/1611]
+
