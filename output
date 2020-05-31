@@ -88,3 +88,33 @@ Saving to: 'c:/temp/God/30-May-20/3.html'
 
 2020-05-30 15:06:38 (4.93 MB/s) - 'c:/temp/God/30-May-20/3.html' saved [1611/1611]
 
+--2020-05-31 19:50:16--  https://geulah.org.il/test
+Resolving geulah.org.il (geulah.org.il)... 37.139.27.34
+Connecting to geulah.org.il (geulah.org.il)|37.139.27.34|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://geulah.org.il/test/ [following]
+--2020-05-31 19:50:17--  https://geulah.org.il/test/
+Reusing existing connection to geulah.org.il:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 1802 (1.8K) [text/html]
+Saving to: 'c:/temp/God/31-May-20/1.html'
+
+     0K .                                                     100% 2.91M=0.001s
+
+2020-05-31 19:50:17 (2.91 MB/s) - 'c:/temp/God/31-May-20/1.html' saved [1802/1802]
+
+--2020-05-31 20:55:06--  https://geulah.org.il/test
+Resolving geulah.org.il (geulah.org.il)... 37.139.27.34
+Connecting to geulah.org.il (geulah.org.il)|37.139.27.34|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://geulah.org.il/test/ [following]
+--2020-05-31 20:55:07--  https://geulah.org.il/test/
+Reusing existing connection to geulah.org.il:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 1787 (1.7K) [text/html]
+Saving to: 'c:/temp/God/31-May-20/2.html'
+
+     0K .                                                     100% 2.60M=0.001s
+
+2020-05-31 20:55:07 (2.60 MB/s) - 'c:/temp/God/31-May-20/2.html' saved [1787/1787]
+
