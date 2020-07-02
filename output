@@ -118,3 +118,48 @@ Saving to: 'c:/temp/God/31-May-20/2.html'
 
 2020-05-31 20:55:07 (2.60 MB/s) - 'c:/temp/God/31-May-20/2.html' saved [1787/1787]
 
+--2020-07-01 20:19:33--  https://geulah.org.il/test
+Resolving geulah.org.il (geulah.org.il)... 37.139.27.34
+Connecting to geulah.org.il (geulah.org.il)|37.139.27.34|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://geulah.org.il/test/ [following]
+--2020-07-01 20:19:34--  https://geulah.org.il/test/
+Reusing existing connection to geulah.org.il:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 1805 (1.8K) [text/html]
+Saving to: 'c:/temp/God/01-Jul-20/1.html'
+
+     0K .                                                     100% 3.38M=0.001s
+
+2020-07-01 20:19:34 (3.38 MB/s) - 'c:/temp/God/01-Jul-20/1.html' saved [1805/1805]
+
+--2020-07-01 20:21:32--  https://geulah.org.il/test
+Resolving geulah.org.il (geulah.org.il)... 37.139.27.34
+Connecting to geulah.org.il (geulah.org.il)|37.139.27.34|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://geulah.org.il/test/ [following]
+--2020-07-01 20:21:32--  https://geulah.org.il/test/
+Reusing existing connection to geulah.org.il:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 1575 (1.5K) [text/html]
+Saving to: 'c:/temp/God/01-Jul-20/2.html'
+
+     0K .                                                     100% 2.31M=0.001s
+
+2020-07-01 20:21:32 (2.31 MB/s) - 'c:/temp/God/01-Jul-20/2.html' saved [1575/1575]
+
+--2020-07-01 21:27:37--  https://geulah.org.il/test
+Resolving geulah.org.il (geulah.org.il)... 37.139.27.34
+Connecting to geulah.org.il (geulah.org.il)|37.139.27.34|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://geulah.org.il/test/ [following]
+--2020-07-01 21:27:37--  https://geulah.org.il/test/
+Reusing existing connection to geulah.org.il:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 2101 (2.1K) [text/html]
+Saving to: 'c:/temp/God/01-Jul-20/3.html'
+
+     0K ..                                                    100% 3.42M=0.001s
+
+2020-07-01 21:27:37 (3.42 MB/s) - 'c:/temp/God/01-Jul-20/3.html' saved [2101/2101]
+
