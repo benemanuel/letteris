@@ -15,7 +15,7 @@ Letteris Hebrew Bible UTF8
 - Joshua done
 - Judges done
 - 1Samuel done
-- 2Samuel until 21:1
+- 2Samuel until 23:4
 - 1Kings 
 - 2Kings 
 
