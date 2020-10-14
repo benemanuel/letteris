@@ -4,6 +4,3 @@
 09O	30	30		80110	 על אף ש בְּכֽוֹר־עָשָׁ֖ן  נראה  שטעות דפוס היא כך מופיע גם במקורות קדומים הכולל The Samuel scroll from Qumran : 4QSam(a) restored and compared to the Sptuagint and 4QSam(c) Author:	Andrew Fincke Publisher:	Leiden : Brill, 2001. וגם Title	H' tešuʻatek be-amartek bekol dor we-dor memšaltek ..: Seder ha-nevi’im rišonim .., Volume 2
 Contributor	König, Ludwig
 Publisher	stampato per ordine di Ludwig Köning e nella sua officina, 1618
-10O	8	11		82230	הַכֶּ֤סֶף נראה ברור שטעות דפוס
-10O	13	17		83370	 הַח֑וּצָה נראה ברור שטעות דפוס
-10O	15	4		83960	כָּל־אִ֛ישׁ לא דגוש בדפוס
