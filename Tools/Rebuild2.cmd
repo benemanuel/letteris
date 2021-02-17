@@ -12,7 +12,7 @@ goto USB
 rmdir %temp%\upload /q/s
 mkdir %temp%\upload
 xcopy C:\Users\avi\GitHub\letteris\tools\temp\*.html %temp%\upload\. /m
-pscp -i a:\misc\ocean.pvt.ppk %temp%\upload\* root@geulah.org.il:/var/www/geulah/HaTanach/.
+pscp -P 22 -scp -i a:\misc\ocean.pvt.ppk %temp%\upload\* root@geulah.org.il:/var/www/geulah/HaTanach/.
 echo %1
 
 

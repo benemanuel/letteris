@@ -17,7 +17,7 @@ Letteris Hebrew Bible UTF8
 - 1Samuel done
 - 2Samuel done
 - 1Kings done
-- 2Kings until 10:32
+- 2Kings until 12:1
 
 - Isaiah 
 - Jeremiah 
