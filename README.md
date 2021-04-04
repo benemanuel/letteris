@@ -17,7 +17,7 @@ Letteris Hebrew Bible UTF8
 - 1Samuel done
 - 2Samuel done
 - 1Kings done
-- 2Kings until 25:8
+- 2Kings done
 
 - Isaiah 
 - Jeremiah 
@@ -64,5 +64,5 @@ C150 Gilles Tiar
 - Daniel 
 - Ezra 
 - Nehemiah 
-- 1Chronicles 
+- 1Chronicles until 1:1
 - 2Chronicles 
