@@ -56,7 +56,7 @@ C150 Gilles Tiar
 - Job 
 
 - Sos 1:1-1:17 Gilles Tiar 
-- Ruth until 2:3
+- Ruth until 3:4
 - Lamentations 
 - Ecclesiastes 
 - Esther 
