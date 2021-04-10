@@ -56,7 +56,7 @@ C150 Gilles Tiar
 - Job 
 
 - Sos 1:1-1:17 Gilles Tiar 
-- Ruth until 3:4
+- Ruth done
 - Lamentations 
 - Ecclesiastes 
 - Esther 
@@ -64,5 +64,5 @@ C150 Gilles Tiar
 - Daniel 
 - Ezra 
 - Nehemiah 
-- 1Chronicles
+- 1Chronicles until 1:1
 - 2Chronicles 
