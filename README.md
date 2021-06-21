@@ -64,5 +64,5 @@ C150 Gilles Tiar
 - Daniel 
 - Ezra 
 - Nehemiah 
-- 1Chronicles until 26:23
+- 1Chronicles until 27:4
 - 2Chronicles 
