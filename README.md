@@ -65,4 +65,4 @@ C150 Gilles Tiar
 - Ezra 
 - Nehemiah 
 - 1Chronicles done
-- 2Chronicles until 30:5
+- 2Chronicles until 31:1
