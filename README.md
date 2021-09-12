@@ -37,7 +37,8 @@ Letteris Hebrew Bible UTF8
 - Malachi 
 
 #Ketuvim
-- Psalms C1 Gilles Tiar 
+- Psalms until 2:0
+C1 Gilles Tiar 
 C3 Gilles Tiar
 C19 Gilles Tiar 
 C23 Gilles Tiar 
@@ -65,4 +66,4 @@ C150 Gilles Tiar
 - Ezra 
 - Nehemiah 
 - 1Chronicles done
-- 2Chronicles until 35:19
+- 2Chronicles done
