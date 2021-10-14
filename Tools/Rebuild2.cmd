@@ -1,6 +1,6 @@
 @echo off
-del %date%.tmp /q
-del ..\%date%.tmp /q
+del *.tmp /q
+del ..\*.tmp /q
 echo push html to server
 REM Get-Date   -UFormat   "%d-%b-%Y" 
 :USB

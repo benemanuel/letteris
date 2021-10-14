@@ -10,7 +10,7 @@ copy ..\header.txt + ..\%date%.tmp ..\letteris.utf8_txt
 for /F "tokens=1,2" %%a in (..\booksnames.txt) do type ..\%%b.utf8_txt >> ..\letteris.utf8_txt
 echo updatehtml - create html files
 copy head.h + ..\%date%.tmp + body.h temp\index.html /y
-echo if no notice then run \temp\readme2.bat
+echo if no notice then run rebuild2.cmd %CLIPBOARD_TEXT%
 for /F "tokens=1,2,3" %%a in (%userprofile%\GitHub\letteris\booksnames.txt) DO createbooktex.bat %%b %%c
-echo run \temp\readme2.bat %CLIPBOARD_TEXT%
+echo run rebuild2.cmd %CLIPBOARD_TEXT%
 
