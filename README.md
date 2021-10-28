@@ -37,7 +37,7 @@ Letteris Hebrew Bible UTF8
 - Malachi 
 
 #Ketuvim
-- Psalms until 123:1
+- Psalms until 140:4
 C1 Gilles Tiar 
 C3 Gilles Tiar
 C19 Gilles Tiar 
