@@ -53,7 +53,7 @@ C131 Gilles Tiar
 C133 Gilles Tiar 
 C148 Gilles Tiar 
 C150 Gilles Tiar 
-- Proverbs until 22:1
+- Proverbs until 28:14
 - Job 
 
 - Sos 1:1-1:17 Gilles Tiar 
