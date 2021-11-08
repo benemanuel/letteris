@@ -37,7 +37,7 @@ Letteris Hebrew Bible UTF8
 - Malachi 
 
 #Ketuvim
-- Psalms  done
+- Psalms done
 C1 Gilles Tiar 
 C3 Gilles Tiar
 C19 Gilles Tiar 
@@ -53,13 +53,13 @@ C131 Gilles Tiar
 C133 Gilles Tiar 
 C148 Gilles Tiar 
 C150 Gilles Tiar 
-- Proverbs until 28:14
+- Proverbs done
 - Job 
 
 - Sos 1:1-1:17 Gilles Tiar 
 - Ruth done
 - Lamentations 
-- Ecclesiastes 
+- Ecclesiastes until 1:1
 - Esther 
 
 - Daniel 
