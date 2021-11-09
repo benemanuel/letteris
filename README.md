@@ -54,12 +54,12 @@ C133 Gilles Tiar
 C148 Gilles Tiar 
 C150 Gilles Tiar 
 - Proverbs done
-- Job 
+- Job until 1:1
 
 - Sos 1:1-1:17 Gilles Tiar 
 - Ruth done
 - Lamentations 
-- Ecclesiastes until 1:1
+- Ecclesiastes done
 - Esther 
 
 - Daniel 
