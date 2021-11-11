@@ -54,7 +54,7 @@ C133 Gilles Tiar
 C148 Gilles Tiar 
 C150 Gilles Tiar 
 - Proverbs done
-- Job until 1:1
+- Job until 5:1
 
 - Sos 1:1-1:17 Gilles Tiar 
 - Ruth done
