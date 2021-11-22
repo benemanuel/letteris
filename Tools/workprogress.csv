@@ -1,0 +1,42 @@
+Book Number,total verses in book from beginning,Verses in book,Book,Verses done,Book done
+01O,1533,1533,Genesis ,1533,1
+02O,2746,1213,Exodus ,1213,1
+03O,3605,859,Leviticus ,859,1
+04O,4894,1289,Numbers ,1289,1
+05O,5853,959,Deuteronomy ,959,1
+06O,6511,658,Joshua ,658,1
+07O,7129,618,Judges ,618,1
+08O,7214,85,Ruth ,85,1
+09O,8025,811,1Samuel ,811,1
+10O,8720,695,2Samuel ,695,1
+11O,9537,817,1Kings ,817,1
+12O,10256,719,2Kings ,719,1
+13O,11199,943,1Chronicles ,943,1
+14O,12021,822,2Chronicles ,822,1
+15O,12301,280,Ezra ,0,
+16O,12706,405,Nehemiah ,0,
+17O,12873,167,Esther ,0,
+18O,13943,1070,Job ,0, 
+19O,16470,2527,Psalms ,2527,1
+20O,17385,915,Proverbs ,915,1
+21O,17607,222,Ecclesiastes ,222,1
+22O,17724,117,Sos ,0,
+23O,19015,1291,Isaiah ,0,
+24O,20379,1364,Jeremiah ,0,
+25O,20533,154,Lamentations ,0,
+26O,21806,1273,Ezekiel ,0,
+27O,22163,357,Daniel ,0,
+28O,22360,197,Hosea ,0,
+29O,22433,73,Joel ,0,
+30O,22579,146,Amos ,0,
+31O,22600,21,Obadiah ,0,
+32O,22648,48,Jonah ,0,
+33O,22753,105,Micah ,0,
+34O,22800,47,Nahum ,0,
+35O,22856,56,Habakkuk ,0,
+36O,22909,53,Zephaniah ,0,
+37O,22947,38,Haggai ,0,
+38O,23158,211,Zechariah ,0,
+39O,23213,55,Malachi ,0,
+,,,,15685,17
+,,,,68%,44%
