@@ -7,5 +7,5 @@ copy temp\book.txt + tab.txt + temp\chap.txt + tab.txt + temp\verse.txt + eol.tx
 for /F "tokens=4" %%i in ('findstr /b /g:temp\find.txt  ..\%1.utf8_txt') do set FULLVALUE=%%i
 for /F "tokens=2 delims=," %%i in ('findstr %1 workprogress.csv') do set BOOKVALUE=%%i
 set /A "COUNT=((%BOOKVALUE%*10)-%FULLVALUE%)/10"
-echo %1 %2 %3 %COUNT% verses > present_book_status.txt
+echo %1 %2 %3 verse %FULLVALUE% left to do %COUNT% verses > present_book_status.txt
 

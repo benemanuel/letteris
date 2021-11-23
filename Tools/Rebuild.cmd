@@ -11,6 +11,6 @@ for /F "tokens=1,2" %%a in (..\booksnames.txt) do type ..\%%b.utf8_txt >> ..\let
 echo updatehtml - create html files
 copy head.h + ..\tmp.tmp + body.h temp\index.html /y >  NUL
 echo if no notice then run rebuild2.cmd %CLIPBOARD_TEXT%
-for /F "tokens=1,2,3" %%a in (%userprofile%\GitHub\letteris\booksnames.txt) DO createbooktex.bat %%b %%c
+for /F "tokens=1,2,3" %%a in (%userprofile%\GitHub\letteris\booksnames.txt) DO createbooktex.bat %%b %%c >  NUL
 echo run rebuild2.cmd %CLIPBOARD_TEXT%
 
