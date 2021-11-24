@@ -26,9 +26,9 @@ Letteris Hebrew Bible UTF8
 - Hosea 
 - Joel 
 - Amos 
-- Obadiah  until 1:1
-- Jonah 
-- Micah 
+- Obadiah  done
+- Jonah done
+- Micah until 2:8
 - Nahum 
 - Habakkuk 
 - Zephaniah 
