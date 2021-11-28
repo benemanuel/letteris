@@ -28,10 +28,10 @@ Letteris Hebrew Bible UTF8
 - Amos 
 - Obadiah  done
 - Jonah done
-- Micah until 2:8
-- Nahum 
-- Habakkuk 
-- Zephaniah 
+- Micah done
+- Nahum done
+- Habakkuk  done
+- Zephaniah  until 1:1
 - Haggai 
 - Zechariah 
 - Malachi 
