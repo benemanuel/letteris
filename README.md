@@ -23,15 +23,15 @@ Letteris Hebrew Bible UTF8
 - Jeremiah 
 - Ezekiel 
 
-- Hosea 
-- Joel 
-- Amos 
+- Hosea  until 1:1
+- Joel done
+- Amos done
 - Obadiah  done
 - Jonah done
 - Micah done
 - Nahum done
 - Habakkuk  done
-- Zephaniah  until 1:1
+- Zephaniah 
 - Haggai 
 - Zechariah 
 - Malachi 
