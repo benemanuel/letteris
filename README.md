@@ -23,7 +23,7 @@ Letteris Hebrew Bible UTF8
 - Jeremiah 
 - Ezekiel 
 
-- Hosea  until 1:1
+- Hosea  until 8:1
 - Joel done
 - Amos done
 - Obadiah  done
