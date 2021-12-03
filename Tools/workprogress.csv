@@ -26,17 +26,29 @@ Book Number,total verses in book from beginning,Verses in book,Book,Verses done,
 25O,20533,154,Lamentations ,0,
 26O,21806,1273,Ezekiel ,0,
 27O,22163,357,Daniel ,0,
-28O,22360,197,Hosea ,0,
-29O,22433,73,Joel ,0,
-30O,22579,146,Amos ,0,
+28O,22360,197,Hosea ,197,1
+29O,22433,73,Joel ,73,1
+30O,22579,146,Amos ,146,1
 31O,22600,21,Obadiah ,21,1
 32O,22648,48,Jonah ,48,1
-33O,22753,105,Micah ,0,
-34O,22800,47,Nahum ,0,
-35O,22856,56,Habakkuk ,0,
+33O,22753,105,Micah ,105,1
+34O,22800,47,Nahum ,47,1
+35O,22856,56,Habakkuk ,56,1
 36O,22909,53,Zephaniah ,0,
 37O,22947,38,Haggai ,0,
 38O,23158,211,Zechariah ,0,
 39O,23213,55,Malachi ,0,
+,,,,17448,26
+,,,,75%,67%
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
 ,,,,,
 ,,,,,

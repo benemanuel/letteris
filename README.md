@@ -19,11 +19,11 @@ Letteris Hebrew Bible UTF8
 - 1Kings done
 - 2Kings done
 
-- Isaiah 
+- Isaiah until 1:1
 - Jeremiah 
 - Ezekiel 
 
-- Hosea  until 8:1
+- Hosea  done
 - Joel done
 - Amos done
 - Obadiah  done
