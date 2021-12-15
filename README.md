@@ -19,7 +19,7 @@ Letteris Hebrew Bible UTF8
 - 1Kings done
 - 2Kings done
 
-- Isaiah until 45:15
+- Isaiah until 53:3
 - Jeremiah 
 - Ezekiel 
 
