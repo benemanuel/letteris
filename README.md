@@ -19,8 +19,8 @@ Letteris Hebrew Bible UTF8
 - 1Kings done
 - 2Kings done
 
-- Isaiah until 64:1
-- Jeremiah 
+- Isaiah done
+- Jeremiah until 1:1
 - Ezekiel 
 
 - Hosea  done
