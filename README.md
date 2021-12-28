@@ -20,7 +20,7 @@ Letteris Hebrew Bible UTF8
 - 2Kings done
 
 - Isaiah done
-- Jeremiah until 40:1
+- Jeremiah until 44:26
 - Ezekiel 
 
 - Hosea  done
