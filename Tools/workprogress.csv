@@ -20,10 +20,10 @@ Book Number,total verses in book from beginning,Verses in book,Book,Verses done,
 19O,16470,2527,Psalms ,2527,1
 20O,17385,915,Proverbs ,915,1
 21O,17607,222,Ecclesiastes ,222,1
-22O,17724,117,Sos ,0,
+22O,17724,117,Sos ,117,1
 23O,19015,1291,Isaiah ,1291,1
-24O,20379,1364,Jeremiah ,0,
-25O,20533,154,Lamentations ,0,
+24O,20379,1364,Jeremiah ,1364,1
+25O,20533,154,Lamentations ,154,1
 26O,21806,1273,Ezekiel ,0,
 27O,22163,357,Daniel ,0,
 28O,22360,197,Hosea ,197,1
@@ -38,5 +38,5 @@ Book Number,total verses in book from beginning,Verses in book,Book,Verses done,
 37O,22947,38,Haggai ,0,
 38O,23158,211,Zechariah ,0,
 39O,23213,55,Malachi ,0,
-,,,,18739,27
-,,,,81%,69%
+,,,,20374,30
+,,,,88%,77%
