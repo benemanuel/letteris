@@ -21,7 +21,7 @@ Letteris Hebrew Bible UTF8
 
 - Isaiah done
 - Jeremiah done
-- Ezekiel until 1:1
+- Ezekiel until 1:5
 
 - Hosea  done
 - Joel done
@@ -58,7 +58,7 @@ C150 Gilles Tiar
 
 - Sos 1:1-1:17 Gilles Tiar 
 - Ruth done
-- Lamentations 
+- Lamentations done
 - Ecclesiastes done
 - Esther 
 
