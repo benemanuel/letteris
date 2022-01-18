@@ -21,7 +21,7 @@ Letteris Hebrew Bible UTF8
 
 - Isaiah done
 - Jeremiah done
-- Ezekiel until 38:1
+- Ezekiel until 42:1
 
 - Hosea  done
 - Joel done
