@@ -21,7 +21,7 @@ Letteris Hebrew Bible UTF8
 
 - Isaiah done
 - Jeremiah done
-- Ezekiel until 42:1
+- Ezekiel done
 
 - Hosea  done
 - Joel done
@@ -31,9 +31,9 @@ Letteris Hebrew Bible UTF8
 - Micah done
 - Nahum done
 - Habakkuk  done
-- Zephaniah 
-- Haggai 
-- Zechariah 
+- Zephaniah  done
+- Haggai  done
+- Zechariah until 1:1
 - Malachi 
 
 #Ketuvim
