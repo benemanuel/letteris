@@ -33,8 +33,8 @@ Letteris Hebrew Bible UTF8
 - Habakkuk  done
 - Zephaniah  done
 - Haggai  done
-- Zechariah until 1:1
-- Malachi 
+- Zechariah done
+- Malachi done
 
 #Ketuvim
 - Psalms done
@@ -60,7 +60,7 @@ C150 Gilles Tiar
 - Ruth done
 - Lamentations done
 - Ecclesiastes done
-- Esther 
+- Esther until 1:1
 
 - Daniel 
 - Ezra 
