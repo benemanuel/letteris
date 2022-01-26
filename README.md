@@ -45,9 +45,9 @@ Letteris Hebrew Bible UTF8
 - Ruth done
 - Lamentations done
 - Ecclesiastes done
-- Esther until 5:7
+- Esther done 
 
-- Daniel 
+- Daniel until 2:14
 - Ezra 
 - Nehemiah 
 - 1Chronicles done
