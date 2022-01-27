@@ -47,7 +47,7 @@ Letteris Hebrew Bible UTF8
 - Ecclesiastes done
 - Esther done 
 
-- Daniel until 2:14
+- Daniel until 5:24
 - Ezra 
 - Nehemiah 
 - 1Chronicles done
