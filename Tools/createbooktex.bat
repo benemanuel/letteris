@@ -1,10 +1,10 @@
 @echo off
 SETLOCAL
 FOR /F "tokens=* USEBACKQ" %%F IN (`attrib %userprofile%\GitHub\letteris\%1.utf8_txt`) DO SET var=%%F
-IF "%VAR:~0,1%" == "A" GOTO NOFILE
-:YESFILE
+IF "%VAR:~0,1%" == "A" GOTO NEWFILE
+:DONEFILE
 EXIT /B 0
-:NOFILE
+:NEWFILE
 rem   @ECHO %1 Changed.
    attrib %userprofile%\GitHub\letteris\%1.utf8_txt -a
    echo html %1
