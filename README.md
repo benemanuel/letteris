@@ -48,7 +48,7 @@ Letteris Hebrew Bible UTF8
 - Esther done 
 
 - Daniel done
-- Ezra until 8:31
-- Nehemiah 
+- Ezra done
+- Nehemiah until 2:10
 - 1Chronicles done
 - 2Chronicles done
