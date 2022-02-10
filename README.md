@@ -2,7 +2,7 @@
 Letteris Hebrew Bible UTF8
 
 #More information see project's wiki
-
+#until finished first pass
 
 #Torah
 - Genesis done, 22:1-22:19 Gilles Tiar
@@ -49,6 +49,6 @@ Letteris Hebrew Bible UTF8
 
 - Daniel done
 - Ezra done
-- Nehemiah until 2:10
+- Nehemiah done
 - 1Chronicles done
 - 2Chronicles done
