@@ -14,6 +14,6 @@ mkdir %temp%\upload
 xcopy %userprofile%\GitHub\letteris\tools\temp\*.html %temp%\upload\. /m
 pscp -P 22 -scp -i a:\misc\ocean.pvt.ppk %temp%\upload\* root@geulah.org.il:/var/www/geulah/HaTanach/.
 echo %1
-versecount.bat
+rem versecount.bat
 
 

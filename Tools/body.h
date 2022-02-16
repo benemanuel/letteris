@@ -1,5 +1,8 @@
 <p dir=ltr>
-  These files are compiled from the work in progress at </p>  https://github.com/benemanuel/letteris
+  These files are compiled from 
+<a  href="https://github.com/benemanuel/letteris"><span style='color:blue'><span lang=HE
+  dir=RTL>התנ"ך מהדורת לטריס הדיגיטלי</span></span></a>
+ 
 </br></h2>
 
 
