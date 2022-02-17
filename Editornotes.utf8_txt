@@ -146,8 +146,8 @@
 09O,20,26,77580,תוקן טָהֹור
 09O,22,6,77960,תוקן הָאֵ֤שֶׁל
 09O,30,30,80110,צ׳׳ע מה לא סימן בְּבוֹר־עָשָׁ֖ן; בְּכֽוֹר־עָשָׁ֖ן מופיע ב
-09O,30,30,80110,@book{1566neviʾim,title={Neviʾim ris̆onim: Yehos̆uʿa,S̆oftim,S̆muʾel,Melaḵim},url={https://books.google.co.il/books?id=DGbjzkguR1wC},year={1566},publisher={s̆enidpesu ʿim rav haʿiyun ʿal yedey Kris Moterus Plantin}}
-09O,30,30,80110,@book{fincke2001samuel,title={The Samuel Scroll from Qumran: 4QSam[superscript]a Restored and Compared to the Septuagint and 4QSam[superscript]c},author={Fincke,A.},isbn={9789004123700},lccn={2001277690},series={Studies on the texts of the desert of Judah / Studies on the texts of the desert of Judah},url={https://books.google.co.il/books?id=dsGd7SsCgTIC},year={2001},publisher={Brill}}
+09O,30,30,80110,@book{1566neviʾim;title={Neviʾim ris̆onim: Yehos̆uʿa;S̆oftim;S̆muʾel;Melaḵim};url={https://books.google.co.il/books?id=DGbjzkguR1wC};year={1566};publisher={s̆enidpesu ʿim rav haʿiyun ʿal yedey Kris Moterus Plantin}}
+09O,30,30,80110,@book{fincke2001samuel;title={The Samuel Scroll from Qumran: 4QSam[superscript]a Restored and Compared to the Septuagint and 4QSam[superscript]c};author={Fincke;A.};isbn={9789004123700};lccn={2001277690};series={Studies on the texts of the desert of Judah / Studies on the texts of the desert of Judah};url={https://books.google.co.il/books?id=dsGd7SsCgTIC};year={2001};publisher={Brill}}
 10O,13,17,83370,תוקן הַח֑וּצָה
 10O,15,4,83960,צ׳׳ע כָּל־אִ֛ישׁ
 10O,22,1,86060,צ׳׳ל מבנה שירת אריח על גבי לבנה
@@ -210,17 +210,17 @@
 12O,23,4,101730,תוקן אֶת־עֲפָרָ֖ם
 13O,1,44,103000,תוקן וַיָּ֖מָת יֹובָ֑ב 
 13O,2,29,103390,צ׳׳ע למה לא סימן אֲבִיהָ֑יִל ; אֲבִיחָ֑יִל מופיע ב
-13O,2,29,103390,@book{1610ḥamišah,title={Ḥami{\v{s}}ah ḥum{\v{s}}e Torah},number={v. 1},series={Ḥami{\v{s}}ah ḥum{\v{s}}e Torah},url={https://books.google.co.il/books?id=Jn5jAAAAcAAJ},year={1610}}
-13O,2,29,103390,@book{1631chamiša,title={Chami{\v{s}}a chum{\v{s}}ej Tora para{\v{s}}ijotav ptuchot u-stumot},author={Jisrael,M. and Lorenzius,H. (Laurentius,H.)},url={https://books.google.co.il/books?id=rLyL8WHg3j4C},year={1631},publisher={Nidepas beveyt Menas̆eh ben Yi{\'s}raʾel,Hendrik Lorencius}}
-13O,2,29,103390,@book{1711biblia,title={BIBLIA HEBRAICA NON-PUNCTATA in Philebraeorum gratiam FORMA MINIMA compendiose expressa e Typographeo D. E. JABLONSKI,D. cujus etiam Praefatiuncula praemissa est},url={https://books.google.co.il/books?id=asdfAAAAcAAJ},year={1711}}
-13O,2,29,103390,@book{1750biblia,title={Biblia Hebraica sine punctis accurante Nath. Forster. - Oxonii,Typogr. Clarendonianum 1750},series={Biblia Hebraica sine punctis accurante Nath. Forster},url={https://books.google.co.il/books?id=ayZIAAAAcAAJ},year={1750},publisher={Typogr. Clarendonianum}}
-13O,2,29,103390,@book{houbigant1753biblia,title={BIBLIA HEBRAICA CUM NOTIS CRITICIS ET VERSIONE LATINA AD NOTAS CRITICAS FACTA: ACCEDUNT Libri Graeci,qui DEUTERO-CANONICI vocantur,in tres classes distributi},author={Houbigant,C.F. and Briasson,A.C. and Durand,L. and Larmessin,D.},number={v. 3},series={BIBLIA HEBRAICA CUM NOTIS CRITICIS ET VERSIONE LATINA AD NOTAS CRITICAS FACTA: ACCEDUNT Libri Graeci,qui DEUTERO-CANONICI vocantur,in tres classes distributi},url={https://books.google.co.il/books?id=wC5fAAAAcAAJ},year={1753},publisher={Apud Antonium Claudium Briasson,sub signo Scientiae}}
-13O,2,29,103390,@book{kennicott1776תנ,title={תנ"ך עם חלופי נוסחאות: cum variis lectionibus. Edidit Benjaminus Kennicott,},author={Kennicott,B.},series={Vetus Testamentum Hebraicum cum variis lectionibus},url={https://books.google.co.il/books?id=ksIL59ZdPVwC},year={1776},publisher={e typographeo Clarendoniano}}
+13O,2,29,103390,@book{1610ḥamišah;title={Ḥami{\v{s}}ah ḥum{\v{s}}e Torah};number={v. 1};series={Ḥami{\v{s}}ah ḥum{\v{s}}e Torah};url={https://books.google.co.il/books?id=Jn5jAAAAcAAJ};year={1610}}
+13O,2,29,103390,@book{1631chamiša;title={Chami{\v{s}}a chum{\v{s}}ej Tora para{\v{s}}ijotav ptuchot u-stumot};author={Jisrael;M. and Lorenzius;H. (Laurentius;H.)};url={https://books.google.co.il/books?id=rLyL8WHg3j4C};year={1631};publisher={Nidepas beveyt Menas̆eh ben Yi{\'s}raʾel;Hendrik Lorencius}}
+13O,2,29,103390,@book{1711biblia;title={BIBLIA HEBRAICA NON-PUNCTATA in Philebraeorum gratiam FORMA MINIMA compendiose expressa e Typographeo D. E. JABLONSKI;D. cujus etiam Praefatiuncula praemissa est};url={https://books.google.co.il/books?id=asdfAAAAcAAJ};year={1711}}
+13O,2,29,103390,@book{1750biblia;title={Biblia Hebraica sine punctis accurante Nath. Forster. - Oxonii;Typogr. Clarendonianum 1750};series={Biblia Hebraica sine punctis accurante Nath. Forster};url={https://books.google.co.il/books?id=ayZIAAAAcAAJ};year={1750};publisher={Typogr. Clarendonianum}}
+13O,2,29,103390,@book{houbigant1753biblia;title={BIBLIA HEBRAICA CUM NOTIS CRITICIS ET VERSIONE LATINA AD NOTAS CRITICAS FACTA: ACCEDUNT Libri Graeci;qui DEUTERO-CANONICI vocantur;in tres classes distributi};author={Houbigant;C.F. and Briasson;A.C. and Durand;L. and Larmessin;D.};number={v. 3};series={BIBLIA HEBRAICA CUM NOTIS CRITICIS ET VERSIONE LATINA AD NOTAS CRITICAS FACTA: ACCEDUNT Libri Graeci;qui DEUTERO-CANONICI vocantur;in tres classes distributi};url={https://books.google.co.il/books?id=wC5fAAAAcAAJ};year={1753};publisher={Apud Antonium Claudium Briasson;sub signo Scientiae}}
+13O,2,29,103390,@book{kennicott1776תנ;title={תנ"ך עם חלופי נוסחאות: cum variis lectionibus. Edidit Benjaminus Kennicott;};author={Kennicott;B.};series={Vetus Testamentum Hebraicum cum variis lectionibus};url={https://books.google.co.il/books?id=ksIL59ZdPVwC};year={1776};publisher={e typographeo Clarendoniano}}
 13O,6,6,104790,צ׳׳ע יְאָתְרַ֥י
 13O,6,8,104810,צ׳׳ע אֶלְקָנָ֥ה
 13O,8,40,106190,צ׳׳ע קֶ֗שֶׁת
 13O,15,2,107980,צ׳׳ע למה לא סימן הָֽאֱלֹהִ֛ים ; אֶת־אֲרֹ֧ון יְהֹוָ֛ה וּלְשָֽׁרְתֹ֖ו עַד־עֹולָֽם מופיע ב 
-13O,15,2,107980,@book{kennicott1776תנ,title={תנ"ך עם חלופי נוסחאות: cum variis lectionibus. Edidit Benjaminus Kennicott,},author={Kennicott,B.},series={Vetus Testamentum Hebraicum cum variis lectionibus},url={https://books.google.co.il/books?id=ksIL59ZdPVwC},year={1776},publisher={e typographeo Clarendoniano}}
+13O,15,2,107980,@book{kennicott1776תנ;title={תנ"ך עם חלופי נוסחאות: cum variis lectionibus. Edidit Benjaminus Kennicott};author={Kennicott;B.};series={Vetus Testamentum Hebraicum cum variis lectionibus};url={https://books.google.co.il/books?id=ksIL59ZdPVwC};year={1776};publisher={e typographeo Clarendoniano}}
 13O,16,18,108430,צ׳׳ע לֵאמֹ֗ר
 13O,19,7,109190,צ׳׳ע מַֽעֲכָה֙
 13O,25,14,110650,צ׳׳ע יְשַׂרְאֵ֔לָה
@@ -238,7 +238,7 @@
 14O,10,16,114160,תוקן בְבֶן־יִשַׁ֗י
 14O,11,10,114290,תוקן וּבִנְיָמִ֑ן
 14O,11,18,114370,צ׳׳ע למה לא סימן אֲבִיהַ֕יִל ;אֲבִיחַ֕יִל נמצא ב 
-14O,11,18,114370,@book{saruq1854מחברת,title={מחברת מנחם: הוא ספר הראשון אשר חובר על שרשי לשון אבותינו לשון הקודש },author={Saruq,M. and Filipowski,H.},series={Maḥberet Menaḥem: hu sefer rishon asher ḥubar ʻal shorshe leshon ha-ḳodesh},url={https://books.google.co.il/books?id=hmssAQAAIAAJ},year={1854},publisher={Ḥevrat meʻorere yeshenim}}
+14O,11,18,114370,@book{saruq1854מחברת;title={מחברת מנחם: הוא ספר הראשון אשר חובר על שרשי לשון אבותינו לשון הקודש };author={Saruq;M. and Filipowski;H.};series={Maḥberet Menaḥem: hu sefer rishon asher ḥubar ʻal shorshe leshon ha-ḳodesh};url={https://books.google.co.il/books?id=hmssAQAAIAAJ};year={1854};publisher={Ḥevrat meʻorere yeshenim}}
 14O,12,5,114470,תוקן עַל־יְרֽוּשָׁלִַ֖ם
 14O,15,13,115080,תוקן וְעַד־אִשָּׁה
 14O,18,20,115670,צ׳׳ע וַיַּֽעֲמֹד֙
@@ -269,7 +269,7 @@
 16O,3,5,123370,צ׳׳ע צַוָּרָ֔ם חסר א׳ מה כוונת לטריס
 16O,3,30,123620,תוקן אַֽחֲרָ֣יו הֶֽחֱזִיק
 16O,4,7,123770,צ׳׳ע וְקַשְּׁתֹֽתֵיהֶֽם
-16O,7,67,124920,תוקן תוספת ממעזרא ב, סו שמופיע פה סֽוּסֵיהֶ֕ם שְׁבַ֥ע מֵא֖וֹת שְׁלשִׁ֣ים וְשִׁשָּׁ֑ה פִּרְדֵיהֶ֕ם מָאתַ֖יִם אַרְבָּעִ֥ים וַֽחֲמִשָּֽׁה׃ 
+16O,7,67,124920,תוקן תוספת ממעזרא ב; סו שמופיע פה סֽוּסֵיהֶ֕ם שְׁבַ֥ע מֵא֖וֹת שְׁלשִׁ֣ים וְשִׁשָּׁ֑ה פִּרְדֵיהֶ֕ם מָאתַ֖יִם אַרְבָּעִ֥ים וַֽחֲמִשָּֽׁה׃ 
 16O,8,11,125080,תוקן הַסּוּ
 16O,9,28,125430,תוקן תִשְׁמַ֛ע
 16O,10,31,125830,תוקן בְּנתֵ֖ינוּ
@@ -343,13 +343,13 @@
 23O,32,11,183400,תוקן בּֽטְחֹ֑ות
 23O,33,1,183500,תוקן וְלֹא־בָ֣גְדוּ ב֑ךְ
 23O,38,14,184740,צ׳׳ע למה לא סימן לַמָּר֔וֹם אֲדֹנָ֖י עָֽשְׁקָה־לִּ֥י עָרְבֵֽנִי ; לַמָּרֹ֔ום יְהֹו֖ה עָֽשְׁקָה־לִּ֥י עָרְבֵֽנִי׃ נמצא ב 
-23O,38,14,184740,@book{1750biblia,title={Biblia Hebraica sine punctis accurante Nath. Forster. - Oxonii,Typogr. Clarendonianum 1750},series={Biblia Hebraica sine punctis accurante Nath. Forster},url={https://books.google.co.il/books?id=ayZIAAAAcAAJ},year={1750},publisher={Typogr. Clarendonianum}}
+23O,38,14,184740,@book{1750biblia;title={Biblia Hebraica sine punctis accurante Nath. Forster. - Oxonii;Typogr. Clarendonianum 1750};series={Biblia Hebraica sine punctis accurante Nath. Forster};url={https://books.google.co.il/books?id=ayZIAAAAcAAJ};year={1750};publisher={Typogr. Clarendonianum}}
 23O,40,5,184950,צ׳׳ע יְהֹוָ֑ה
 23O,41,29,185500,צ׳׳ע הֵ֣ן כֻּלָּ֔ם אָ֥וֶן 
 23O,46,8,186640,תוקן וְהִתְאֹשָׁ֑שׁוּ בכל המהדורה כמעט ואין חולם חסר בהצמדה ל שׁ והורדתי למען האחידות
 23O,47,8,186770,תוקן הַיּשֶׁ֣בֶת נמצא ב
-23O,47,8,186770,@book{kennicott1776תנ,title={תנ"ך עם חלופי נוסחאות: cum variis lectionibus. Edidit Benjaminus Kennicott,},author={Kennicott,B.},series={Vetus Testamentum Hebraicum cum variis lectionibus},url={https://books.google.co.il/books?id=ksIL59ZdPVwC},year={1776},publisher={e typographeo Clarendoniano}}
-23O,47,8,186770,@book{greve1810isaias,title={Isaias Hebraice Latine Belgice},author={Greve,E.J. and Brave,Wouter (Amsterdam)},url={https://books.google.co.il/books?id=x8hSAAAAcAAJ},year={1810},publisher={W. Brave}}
+23O,47,8,186770,@book{kennicott1776תנ;title={תנ"ך עם חלופי נוסחאות: cum variis lectionibus. Edidit Benjaminus Kennicott};author={Kennicott;B.};series={Vetus Testamentum Hebraicum cum variis lectionibus};url={https://books.google.co.il/books?id=ksIL59ZdPVwC};year={1776};publisher={e typographeo Clarendoniano}}
+23O,47,8,186770,@book{greve1810isaias;title={Isaias Hebraice Latine Belgice};author={Greve;E.J. and Brave;Wouter (Amsterdam)};url={https://books.google.co.il/books?id=x8hSAAAAcAAJ};year={1810};publisher={W. Brave}}
 23O,49,1,187070,תוקן יְהֹוָה
 23O,56,7,188300,תוקן וְשִׂמַּחְתִּים
 23O,59,10,188800,תוקן כַֽעִוְּרִים֙
@@ -407,9 +407,9 @@
 27O,6,17,219900,תוקן אַ֤נְתְּ יתיר י׳
 27O,7,15,220170,תוקן הערה
 27O,9,8,220650,צ׳׳ע למה לא סימן יְהֹוָ֗ה ; אֲדֹנָ֗י נמצא ב  
-27O,9,8,220650,@book{yaḥya1633peirush,title={Peirush Don Yosef ibn Yaḥya ʻal Dani'el: Paraphrasis Dn. Iosephi Iachiade in Danielem : cum versione vt annotationibus Constantini l'Empereur ab Oppyck,S.T.D. \& S.L.P. quibus oratio de lingua hebraea subjungitur},author={Yaḥya,J.D.I.},url={https://books.google.co.il/books?id=ZwUrAAAAYAAJ},year={1633},publisher={Apud Ioannem Ianssonium}}
-27O,9,8,220650,@book{forster1750biblia,title={Biblia Hebraica sine punctis},author={Forster,N. and Oxford University Press},series={Torah Nevi'im u-Khetuvim},url={https://books.google.co.il/books?id=5jpbAAAAQAAJ},year={1750},publisher={E typographeo Clarendoniano,typis et sumtibus Academicis}}
-27O,9,8,220650,@book{houbigant1753biblia,title={BIBLIA HEBRAICA CUM NOTIS CRITICIS ET VERSIONE LATINA AD NOTAS CRITICAS FACTA: ACCEDUNT Libri Graeci,qui DEUTERO-CANONICI vocantur,in tres classes distributi},author={Houbigant,C.F. and Briasson,A.C. and Durand,L. and Larmessin,D.},number={v. 4},series={BIBLIA HEBRAICA CUM NOTIS CRITICIS ET VERSIONE LATINA AD NOTAS CRITICAS FACTA: ACCEDUNT Libri Graeci,qui DEUTERO-CANONICI vocantur,in tres classes distributi},url={https://books.google.co.il/books?id=Oy9fAAAAcAAJ},year={1753},publisher={Apud Antonium Claudium Briasson,sub signo Scientiae}}
+27O,9,8,220650,@book{yaḥya1633peirush;title={Peirush Don Yosef ibn Yaḥya ʻal Dani'el: Paraphrasis Dn. Iosephi Iachiade in Danielem : cum versione vt annotationibus Constantini l'Empereur ab Oppyck;S.T.D. \& S.L.P. quibus oratio de lingua hebraea subjungitur};author={Yaḥya;J.D.I.};url={https://books.google.co.il/books?id=ZwUrAAAAYAAJ};year={1633};publisher={Apud Ioannem Ianssonium}}
+27O,9,8,220650,@book{forster1750biblia;title={Biblia Hebraica sine punctis};author={Forster;N. and Oxford University Press};series={Torah Nevi'im u-Khetuvim};url={https://books.google.co.il/books?id=5jpbAAAAQAAJ};year={1750};publisher={E typographeo Clarendoniano;typis et sumtibus Academicis}}
+27O,9,8,220650,@book{houbigant1753biblia;title={BIBLIA HEBRAICA CUM NOTIS CRITICIS ET VERSIONE LATINA AD NOTAS CRITICAS FACTA: ACCEDUNT Libri Graeci;qui DEUTERO-CANONICI vocantur;in tres classes distributi};author={Houbigant;C.F. and Briasson;A.C. and Durand;L. and Larmessin;D.};number={v. 4};series={BIBLIA HEBRAICA CUM NOTIS CRITICIS ET VERSIONE LATINA AD NOTAS CRITICAS FACTA: ACCEDUNT Libri Graeci;qui DEUTERO-CANONICI vocantur;in tres classes distributi};url={https://books.google.co.il/books?id=Oy9fAAAAcAAJ};year={1753};publisher={Apud Antonium Claudium Briasson;sub signo Scientiae}}
 27O,10,16,221000,צ׳׳ל תנ׳׳ך אמסטרדם שנת תכ׳׳ז דפוס יוסף עטיאש @book{url={https://www.nli.org.il/he/books/NNL_ALEPH002094096/NLI}}
 27O,10,19,221030,צ׳׳ע וּֽכְדַבְּרֹ֤ו
 27O,12,1,221510,תוקן הַשַּ֣ר
