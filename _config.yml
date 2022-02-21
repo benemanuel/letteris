@@ -1,0 +1,7 @@
+   ```yml
+title: [The Hebrew Bible (1866) Meir (Max) Letteris]
+description: [Reproducion the Publication of the Hebrew Bible (1866) as was done by Meir (Max) Letteris]
+    remote_theme: pages-themes/slate@v0.2.0
+    plugins:
+    - jekyll-remote-theme # add this line to the plugins list if you already have one
+    ```
