@@ -7,7 +7,7 @@ EXIT /B 0
 :NEWFILE
 rem   @ECHO %1 Changed.
    attrib %userprofile%\GitHub\letteris\%1.utf8_txt -a
-   echo html %1
+   echo create html %1
    copy head.h ..\docs\%1.html  >  NUL
    echo  %1 %2 >> ..\docs\%1.html
    echo ^</br^> ^</h2^> >> ..\docs\%1.html

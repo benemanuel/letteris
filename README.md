@@ -2,7 +2,9 @@
 Letteris Hebrew Bible UTF8
 
 #More information see project's wiki
+
 #or metadata.txt
+
 #until update 21-Feb-2022
 
 #Torah
