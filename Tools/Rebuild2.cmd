@@ -9,10 +9,10 @@ echo "Insert USB"
 pause
 goto USB
 :UPDATE
-rmdir %temp%\upload /q/s
-mkdir %temp%\upload
-xcopy %userprofile%\GitHub\letteris\tools\temp\*.html %temp%\upload\. /m
-pscp -P 22 -scp -i a:\misc\ocean.pvt.ppk %temp%\upload\* root@geulah.org.il:/var/www/geulah/HaTanach/.
+rmdir %..\docs%\upload /q/s
+mkdir %..\docs%\upload
+xcopy %userprofile%\GitHub\letteris\docs\*.html %..\docs%\upload\. /m
+pscp -P 22 -scp -i a:\misc\ocean.pvt.ppk %..\docs%\upload\* root@geulah.org.il:/var/www/geulah/HaTanach/.
 echo %1
 rem versecount.bat
 

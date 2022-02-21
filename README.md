@@ -2,7 +2,8 @@
 Letteris Hebrew Bible UTF8
 
 #More information see project's wiki
-#until finished first pass
+#or metadata.txt
+#until update 21-Feb-2022
 
 #Torah
 - Genesis done, 22:1-22:19 Gilles Tiar

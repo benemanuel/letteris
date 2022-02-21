@@ -8,8 +8,8 @@ EXIT /B 0
 rem   @ECHO %1 Changed.
    attrib %userprofile%\GitHub\letteris\%1.utf8_txt -a
    echo html %1
-   copy head.h temp\%1.html  >  NUL
-   echo  %1 %2 >> temp\%1.html
-   echo ^</br^> ^</h2^> >> temp\%1.html
-   for /f "tokens=1,2,3,4,*" %%a in ('TYPE %userprofile%\GitHub\letteris\%1.utf8_txt') do echo (%%b,%%c) %%e >>  temp\%1.html
-   echo ^</html^> >> temp\%1.html
+   copy head.h ..\docs\%1.html  >  NUL
+   echo  %1 %2 >> ..\docs\%1.html
+   echo ^</br^> ^</h2^> >> ..\docs\%1.html
+   for /f "tokens=1,2,3,4,*" %%a in ('TYPE %userprofile%\GitHub\letteris\%1.utf8_txt') do echo (%%b,%%c) %%e >>  ..\docs\%1.html
+   echo ^</html^> >> ..\docs\%1.html
