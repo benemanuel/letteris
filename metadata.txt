@@ -1,0 +1,14 @@
+Encoding=UTF-8
+LanguageName=Hebrew
+ISOLanguageCode=he
+OldTestamentName=Letteris
+WorkTitle=The Hebrew Bible (1866) Meir (Max) Letteris
+WorkAbbreviation=LetterisHeb
+WorkDescription=Reproducion the Publication of the Hebrew Bible (1866) as was done by Meir (Max) Letteris
+CopyrightDate=2022
+CopyrightNotice=Copyright © 2022 GPL-3.0 License
+About=Letteris Hebrew Bible UTF8
+Creator=Avraham BenEmanuel
+Version.date=2022-02-15
+Website=https://shirhashirim.org.il
+Email=info@shirhashirim.org.il
