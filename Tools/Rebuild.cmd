@@ -1,7 +1,7 @@
 @echo off
 notepad %userprofile%\GitHub\letteris\readme.md
 ren echo start
-for /F "tokens=2,4" %%a in ('findstr "until" %userprofile%\GitHub\letteris\README.md') do set CLIPBOARD_TEXT="Edited until  %%a %%b"
+for /F "tokens=2,4" %%a in ('findstr "until" %userprofile%\GitHub\letteris\README.md') do set CLIPBOARD_TEXT="Edited updated  %%a %%b"
 echo %CLIPBOARD_TEXT% | clip
 rem for /F "tokens=2,4" %%a in ('findstr "until" %userprofile%\GitHub\letteris\README.md') do echo #Edited updated  %%a %%b > tmp.tmp
 cd %userprofile%\GitHub\letteris\Tools
