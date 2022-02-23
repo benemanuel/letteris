@@ -1,8 +1,8 @@
 #THE UNBOUND BIBLE (www.unboundbible.org)
-#name	Hebrew OT: Westminster Leningrad Codex
+#name	Hebrew OT: Letteris Edition
 #filetype	Unmapped-BCVS
-#copyright	
-#abbreviation	
+#copyright	GPL-3.0 License
+#abbreviation	LHB	
 #language	hbo
 #note	
 #columns	orig_book_index	orig_chapter	orig_verse	orig_subverse	order_by	text
