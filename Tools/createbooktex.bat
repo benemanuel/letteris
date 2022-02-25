@@ -11,5 +11,8 @@ rem   @ECHO %1 Changed.
    copy head.h ..\docs\%1.html  >  NUL
    echo  %1 %2 >> ..\docs\%1.html
    echo ^</br^> ^</h2^> >> ..\docs\%1.html
-   for /f "tokens=1,2,3,4,*" %%a in ('TYPE %userprofile%\GitHub\letteris\%1.utf8_txt') do echo (%%b,%%c) %%e >>  ..\docs\%1.html
+rem  html text only file
+rem for /f "tokens=1,2,3,4,*" %%a in ('TYPE %userprofile%\GitHub\letteris\%1.utf8_txt') do echo (%%b,%%c) %%e >>  ..\docs\%1.html
+rem  html with verse links
+  for /f "tokens=1,2,3,4,*" %%a in ('TYPE %userprofile%\GitHub\letteris\%1.utf8_txt') do echo ^<a target = '_blank' href='https://geulah.org.il/HaTanach/verse/?verse=%%d'/^> (%%b,%%c)^</a^> %%e >>  ..\docs\%1.html
    echo ^</html^> >> ..\docs\%1.html
