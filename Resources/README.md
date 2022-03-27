@@ -11,5 +11,3 @@ https://geulah.org.il/tnk.pdf
 -- [same as above diffrent link](https://archive.org/details/holybibleinorig00lettgoog/holybibleinorig00lettgoog.pdf)<br>
 - [Hebrew Publishing Company's 1910 reprint](https://ia802300.us.archive.org/15/items/Letteris_Tanakh/Letteris_Tanakh.pdf)<br>
 -- [same as above diffrent link](https://ia800503.us.archive.org/19/items/torahneviimukhe00lett/torahneviimukhe00lett_bw.pdf)<br>
-
-
