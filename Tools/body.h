@@ -1,4 +1,4 @@
-<p dir=ltr>
+</br><p dir=ltr>
   These files are compiled from 
 <a  href="https://github.com/benemanuel/letteris"><span style='color:blue'><span lang=HE
   dir=RTL>התנ"ך מהדורת לטריס הדיגיטלי</span></span></a>
