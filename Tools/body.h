@@ -253,7 +253,7 @@ normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif'>&nbsp
   <td style='padding:.75pt .75pt .75pt .75pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal'><span style='font-size:12.0pt;font-family:"Ezra SIL"'><a
-  href="1Chronicles.html"><span style='color:blue'>2 Chronicles <span lang=HE dir=RTL>דברי הימים ב</span></span></a></span></p>
+  href="2Chronicles.html"><span style='color:blue'>2 Chronicles <span lang=HE dir=RTL>דברי הימים ב</span></span></a></span></p>
   </td>
  </tr>
  <tr>
