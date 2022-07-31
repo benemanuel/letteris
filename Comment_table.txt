@@ -1,0 +1,13 @@
+﻿קרי_וכתיב,Qere and Ketiv,1
+טעמים,Cantillation marks,2
+סימון,Dots,3
+הבהרה,Pronunciation,4
+סבירין,Probably understood,5
+ניקוד,Grammar and vowels,6
+צ׳׳ל,Accepted option,7
+נ׳׳א,Rejected option,8
+צורת_האות,Typography,9
+הוראת_כתיבה,Writting instructions,10
+קדש,Holiness of word,11
+מידע,Information,12
+הפטרה,Haftorot,13
