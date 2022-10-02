@@ -12,6 +12,10 @@ copy head.h + ..\tmp.tmp + body.h ..\docs\index.html /y >  NUL
 for /F "tokens=1,2" %%a in (..\booksnames.txt) do type ..\%%b.utf8_txt >> ..\letteris.utf8_txt
 del statistics.txt /q
 for /F "tokens=1,2" %%a in (..\booksnames.txt) do statistics.bat %%a %%b
+rem from this point on the batch stops working
+findstr Version ..\metadata.txt
+notepad ..\metadata.txt
+pause
 rem create zip version of letteris
 7z a ..\letteris.zip ..\letteris.utf8_txt
 echo if no notice then run rebuild2.cmd %CLIPBOARD_TEXT%
