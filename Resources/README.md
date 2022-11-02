@@ -1,7 +1,7 @@
 Scan of Letteris Tanach with English 
 https://geulah.org.il/tnk.pdf
 
-[The Israel National Library has added online more editions}(https://www.nli.org.il)
+[The Israel National Library has added online more editions](https://www.nli.org.il)
 
 - [excellent high quality scan of first Edition 1852 Vienna](https://www.nli.org.il/en/books/NNL_ALEPH002093804/NLI)
 - [excellent high quality scan of 1866 Edition Berlin two column](https://www.nli.org.il/en/books/NNL_ALEPH002093770/NLI)
