@@ -2,7 +2,7 @@ Scan of Letteris Tanach with English
 
 https://geulah.org.il/tnk.pdf
 
-- [excellent high quality scan of first Edition 1852] (https://www.nli.org.il/en/books/NNL_ALEPH002093804/NLI)
+- [excellent high quality scan of first Edition 1852](https://www.nli.org.il/en/books/NNL_ALEPH002093804/NLI)
 - [excellent high quality scan of 1873 Edition](https://drive.google.com/file/d/1kbnzR-eTDbfzHQr7xEDT6sW3kfORH6K2/view?usp=sharing)<br>
 -- [same as above diffrent link (needs account to download full book)](https://babel.hathitrust.org/cgi/pt?id=uc1.a0000013649&view=1up&seq=16)<br>
 -- [same as above diffrent link](https://hdl.handle.net/2027/uc1.a0000013649?urlappend=%3Bui=embed)<br>
