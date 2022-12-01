@@ -21,5 +21,8 @@ rem create zip version of letteris
 echo if no notice then run rebuild2.cmd %CLIPBOARD_TEXT%
 rem for /F "tokens=1,2,3" %a in (%userprofile%\GitHub\letteris\booksnames.txt) DO createbooktex.bat %b %c 
 for /F "tokens=1,2,3" %%a in (%userprofile%\GitHub\letteris\booksnames.txt) DO createbooktex.bat %%b %%c 
-type ..\tmp.tmp | clip
-echo run rebuild2.cmd %CLIPBOARD_TEXT%
+del *.tmp /q
+del ..\*.tmp /q
+createallbooks.bat
+echo to update html on server update GitHUB and follow instructions
+echo /var/www/hatanach/verse/setup/create/howto.txt
