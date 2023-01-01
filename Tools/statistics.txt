@@ -71,7 +71,7 @@
 36O Zephaniah 
      53     962   15646
 37O Haggai 
-     38     715   11899
+     38     715   11897
 38O Zechariah 
     211    4018   64137
 39O Malachi 
