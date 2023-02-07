@@ -9,6 +9,6 @@ CopyrightDate=2023
 CopyrightNotice=Copyright © 2022 GPL-3.0 License
 About=Letteris Hebrew Bible UTF8
 Creator=Avraham BenEmanuel
-Version.date=2023-2-06
+Version.date=2023-2-07
 Website=https://shirhashirim.org.il
 Email=info@shirhashirim.org.il
