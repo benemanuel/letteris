@@ -18,7 +18,6 @@ notepad ..\metadata.txt
 pause
 rem create zip version of letteris
 7z a ..\letteris.zip ..\letteris.utf8_txt
-echo if no notice then run rebuild2.cmd %CLIPBOARD_TEXT%
 rem for /F "tokens=1,2,3" %a in (%userprofile%\GitHub\letteris\booksnames.txt) DO createbooktex.bat %b %c 
 for /F "tokens=1,2,3" %%a in (%userprofile%\GitHub\letteris\booksnames.txt) DO createbooktex.bat %%b %%c 
 del *.tmp /q
