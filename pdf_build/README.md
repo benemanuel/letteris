@@ -14,7 +14,7 @@ pdf_build/
   README.md                this file
   tanach.json              books, chapter counts, Hebrew/English names, groups
   parshiot.json            the weekly Torah portions
-  title_page.txt           text of the book's title page (edit to change it)
+  title_page.txt           text of the book's title page
   composite/
     package.json           marks the .js scripts as ES modules
     vendor/fonts/          magalith Tanach Pro.otf
@@ -137,7 +137,7 @@ changing a page boundary needs `set-boundary.mjs` in the original project.
 ### Refresh the text from the corpus API
 
 Run `composite\work\update_ktiv.bat`. The corpus API must be running at
-`localhost:8200`. The batch file runs
+`localhost:8200`. (local version of https://tanach.geulah.org.il) The batch file runs
 `composite/src/10-corpus-update.js --apply --apply-renumbered`, which:
 
 - pulls all 929 chapters into `work/corpus-new/`
@@ -151,8 +151,10 @@ Run `composite\work\update_ktiv.bat`. The corpus API must be running at
   changed chapters in. If `work/corpus/` is missing, it is created from the
   pull, with no backup and no comparison.
 
-Read `work/corpus-update-report.txt` afterwards, then rebuild. Without
-`--apply` the script only reports.
+Then it deletes `work/corpus-new/`; the next run downloads it again. Read
+`work/corpus-update-report.txt` afterwards, then rebuild. Without `--apply`
+the script only reports and keeps `work/corpus-new/`, so
+`--skip-pull` can compare it again without downloading.
 
 `update_notes.bat` regenerates `word_notes.json` from the
 `cantillation-sequences` repo (`C:\Users\avi\GitHub\cantillation-sequences`)

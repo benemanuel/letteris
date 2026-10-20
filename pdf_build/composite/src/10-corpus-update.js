@@ -18,7 +18,8 @@
 //        renumbered   - a verse gained/lost words (or verses differ). Unsafe:
 //                       lists every reference into the affected verses.
 //   3. --apply: back up work/corpus to work/corpus-backup-<date>, copy in the
-//      text-only chapters (and renumbered ones only with --apply-renumbered).
+//      text-only chapters (and renumbered ones only with --apply-renumbered),
+//      then delete work/corpus-new.
 //
 // Report: work/corpus-update-report.txt. Afterwards rebuild pages as usual -
 // boundaries are unchanged by a text-only update.
@@ -166,6 +167,13 @@ export async function main(argv = process.argv.slice(2)) {
   console.log(lines.slice(0, 2).join('\n'));
   console.log(lines.at(-1));
   console.log(`report: ${REPORT}`);
+
+  // After --apply the pull is no longer needed: remove it (the next run pulls
+  // again). Report-only runs keep it, so --skip-pull can compare it again.
+  if (args.has('apply')) {
+    fs.rmSync(NEW_DIR, { recursive: true, force: true });
+    console.log(`removed ${NEW_DIR}`);
+  }
 }
 
 runMain(import.meta.url, main);
