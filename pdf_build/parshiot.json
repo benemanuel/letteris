@@ -1,0 +1,88 @@
+{
+  "torah_portions": [
+    {
+      "book": "Genesis",
+      "book_hebrew": "בראשית",
+      "portions": [
+        { "number": 1, "name": "Bereshit", "name_hebrew": "בראשית", "start_verse": "Genesis 1:1", "end_verse": "Genesis 6:8" },
+        { "number": 2, "name": "Noach", "name_hebrew": "נח", "start_verse": "Genesis 6:9", "end_verse": "Genesis 11:32" },
+        { "number": 3, "name": "Lech-Lecha", "name_hebrew": "לך לך", "start_verse": "Genesis 12:1", "end_verse": "Genesis 17:27" },
+        { "number": 4, "name": "Vayera", "name_hebrew": "וירא", "start_verse": "Genesis 18:1", "end_verse": "Genesis 22:24" },
+        { "number": 5, "name": "Chayei Sarah", "name_hebrew": "חיי שרה", "start_verse": "Genesis 23:1", "end_verse": "Genesis 25:18" },
+        { "number": 6, "name": "Toldot", "name_hebrew": "תולדות", "start_verse": "Genesis 25:19", "end_verse": "Genesis 28:9" },
+        { "number": 7, "name": "Vayetze", "name_hebrew": "ויצא", "start_verse": "Genesis 28:10", "end_verse": "Genesis 32:3" },
+        { "number": 8, "name": "Vayishlach", "name_hebrew": "וישלח", "start_verse": "Genesis 32:4", "end_verse": "Genesis 36:43" },
+        { "number": 9, "name": "Vayeshev", "name_hebrew": "וישב", "start_verse": "Genesis 37:1", "end_verse": "Genesis 40:23" },
+        { "number": 10, "name": "Miketz", "name_hebrew": "מקץ", "start_verse": "Genesis 41:1", "end_verse": "Genesis 44:17" },
+        { "number": 11, "name": "Vayigash", "name_hebrew": "ויגש", "start_verse": "Genesis 44:18", "end_verse": "Genesis 47:27" },
+        { "number": 12, "name": "Vayechi", "name_hebrew": "ויחי", "start_verse": "Genesis 47:28", "end_verse": "Genesis 50:26" }
+      ]
+    },
+    {
+      "book": "Exodus",
+      "book_hebrew": "שמות",
+      "portions": [
+        { "number": 13, "name": "Shemot", "name_hebrew": "שמות", "start_verse": "Exodus 1:1", "end_verse": "Exodus 6:1" },
+        { "number": 14, "name": "Va'era", "name_hebrew": "וארא", "start_verse": "Exodus 6:2", "end_verse": "Exodus 9:35" },
+        { "number": 15, "name": "Bo", "name_hebrew": "בא", "start_verse": "Exodus 10:1", "end_verse": "Exodus 13:16" },
+        { "number": 16, "name": "Beshalach", "name_hebrew": "בשלח", "start_verse": "Exodus 13:17", "end_verse": "Exodus 17:16" },
+        { "number": 17, "name": "Yitro", "name_hebrew": "יתרו", "start_verse": "Exodus 18:1", "end_verse": "Exodus 20:26" },
+        { "number": 18, "name": "Mishpatim", "name_hebrew": "משפטים", "start_verse": "Exodus 21:1", "end_verse": "Exodus 24:18" },
+        { "number": 19, "name": "Terumah", "name_hebrew": "תרומה", "start_verse": "Exodus 25:1", "end_verse": "Exodus 27:19" },
+        { "number": 20, "name": "Tetzaveh", "name_hebrew": "תצוה", "start_verse": "Exodus 27:20", "end_verse": "Exodus 30:10" },
+        { "number": 21, "name": "Ki Tisa", "name_hebrew": "כי תשא", "start_verse": "Exodus 30:11", "end_verse": "Exodus 34:35" },
+        { "number": 22, "name": "Vayakhel", "name_hebrew": "ויקהל", "start_verse": "Exodus 35:1", "end_verse": "Exodus 38:20" },
+        { "number": 23, "name": "Pekudei", "name_hebrew": "פקודי", "start_verse": "Exodus 38:21", "end_verse": "Exodus 40:38" }
+      ]
+    },
+    {
+      "book": "Leviticus",
+      "book_hebrew": "ויקרא",
+      "portions": [
+        { "number": 24, "name": "Vayikra", "name_hebrew": "ויקרא", "start_verse": "Leviticus 1:1", "end_verse": "Leviticus 5:26" },
+        { "number": 25, "name": "Tzav", "name_hebrew": "צו", "start_verse": "Leviticus 6:1", "end_verse": "Leviticus 8:36" },
+        { "number": 26, "name": "Shemini", "name_hebrew": "שמיני", "start_verse": "Leviticus 9:1", "end_verse": "Leviticus 11:47" },
+        { "number": 27, "name": "Tazria", "name_hebrew": "תזריע", "start_verse": "Leviticus 12:1", "end_verse": "Leviticus 13:59" },
+        { "number": 28, "name": "Metzora", "name_hebrew": "מצורע", "start_verse": "Leviticus 14:1", "end_verse": "Leviticus 15:33" },
+        { "number": 29, "name": "Acharei Mot", "name_hebrew": "אחרי מות", "start_verse": "Leviticus 16:1", "end_verse": "Leviticus 18:30" },
+        { "number": 30, "name": "Kedoshim", "name_hebrew": "קדושים", "start_verse": "Leviticus 19:1", "end_verse": "Leviticus 20:27" },
+        { "number": 31, "name": "Emor", "name_hebrew": "אמור", "start_verse": "Leviticus 21:1", "end_verse": "Leviticus 24:23" },
+        { "number": 32, "name": "Behar", "name_hebrew": "בהר", "start_verse": "Leviticus 25:1", "end_verse": "Leviticus 26:2" },
+        { "number": 33, "name": "Bechukotai", "name_hebrew": "בחוקתי", "start_verse": "Leviticus 26:3", "end_verse": "Leviticus 27:34" }
+      ]
+    },
+    {
+      "book": "Numbers",
+      "book_hebrew": "במדבר",
+      "portions": [
+        { "number": 34, "name": "Bamidbar", "name_hebrew": "במדבר", "start_verse": "Numbers 1:1", "end_verse": "Numbers 4:20" },
+        { "number": 35, "name": "Naso", "name_hebrew": "נשא", "start_verse": "Numbers 4:21", "end_verse": "Numbers 7:89" },
+        { "number": 36, "name": "Beha'alotcha", "name_hebrew": "בהעלתך", "start_verse": "Numbers 8:1", "end_verse": "Numbers 12:16" },
+        { "number": 37, "name": "Shelach", "name_hebrew": "שלח לך", "start_verse": "Numbers 13:1", "end_verse": "Numbers 15:41" },
+        { "number": 38, "name": "Korach", "name_hebrew": "קרח", "start_verse": "Numbers 16:1", "end_verse": "Numbers 18:32" },
+        { "number": 39, "name": "Chukat", "name_hebrew": "חקת", "start_verse": "Numbers 19:1", "end_verse": "Numbers 22:1" },
+        { "number": 40, "name": "Balak", "name_hebrew": "בלק", "start_verse": "Numbers 22:2", "end_verse": "Numbers 25:9" },
+        { "number": 41, "name": "Pinchas", "name_hebrew": "פנחס", "start_verse": "Numbers 25:10", "end_verse": "Numbers 30:1" },
+        { "number": 42, "name": "Matot", "name_hebrew": "מטות", "start_verse": "Numbers 30:2", "end_verse": "Numbers 32:42" },
+        { "number": 43, "name": "Masei", "name_hebrew": "מסעי", "start_verse": "Numbers 33:1", "end_verse": "Numbers 36:13" }
+      ]
+    },
+    {
+      "book": "Deuteronomy",
+      "book_hebrew": "דברים",
+      "portions": [
+        { "number": 44, "name": "Devarim", "name_hebrew": "דברים", "start_verse": "Deuteronomy 1:1", "end_verse": "Deuteronomy 3:22" },
+        { "number": 45, "name": "Va'etchanan", "name_hebrew": "ואתחנן", "start_verse": "Deuteronomy 3:23", "end_verse": "Deuteronomy 7:11" },
+        { "number": 46, "name": "Eikev", "name_hebrew": "עקב", "start_verse": "Deuteronomy 7:12", "end_verse": "Deuteronomy 11:25" },
+        { "number": 47, "name": "Re'eh", "name_hebrew": "ראה", "start_verse": "Deuteronomy 11:26", "end_verse": "Deuteronomy 16:17" },
+        { "number": 48, "name": "Shoftim", "name_hebrew": "שופטים", "start_verse": "Deuteronomy 16:18", "end_verse": "Deuteronomy 21:9" },
+        { "number": 49, "name": "Ki Teitzei", "name_hebrew": "כי תצא", "start_verse": "Deuteronomy 21:10", "end_verse": "Deuteronomy 25:19" },
+        { "number": 50, "name": "Ki Tavo", "name_hebrew": "כי תבוא", "start_verse": "Deuteronomy 26:1", "end_verse": "Deuteronomy 29:8" },
+        { "number": 51, "name": "Nitzavim", "name_hebrew": "נצבים", "start_verse": "Deuteronomy 29:9", "end_verse": "Deuteronomy 30:20" },
+        { "number": 52, "name": "Vayelech", "name_hebrew": "וילך", "start_verse": "Deuteronomy 31:1", "end_verse": "Deuteronomy 31:30" },
+        { "number": 53, "name": "Ha'azinu", "name_hebrew": "האזינו", "start_verse": "Deuteronomy 32:1", "end_verse": "Deuteronomy 32:52" },
+        { "number": 54, "name": "V'Zot HaBerachah", "name_hebrew": "וזאת הברכה", "start_verse": "Deuteronomy 33:1", "end_verse": "Deuteronomy 34:12" }
+      ]
+    }
+  ]
+}

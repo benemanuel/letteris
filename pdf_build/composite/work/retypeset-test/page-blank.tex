@@ -1,0 +1,12 @@
+% Template for a page left empty in the print (pages in "_blankPages" of
+% boundary-verdicts.json, e.g. 662): same paper size, no header, no text.
+% create-page-config.js writes pageN.tex as \def\pagecfg{N} + \input{page-blank.tex};
+% build-body.mjs compiles it.
+
+\documentclass[12pt]{article}
+\input{preamble-common.tex}
+\pagestyle{empty}
+
+\begin{document}
+\null
+\end{document}

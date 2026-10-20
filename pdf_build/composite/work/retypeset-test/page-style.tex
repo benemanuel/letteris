@@ -1,0 +1,98 @@
+% Page style shared by single pages (page-master.tex) and the one-run book
+% (build-book.mjs -> letteris-book.tex): everything between \documentclass and
+% \begin{document}. The page's own settings (\pagecfg, \pageparity, ... from
+% pageN.tex) are read when each page is shipped out, so one copy serves every
+% page of the book. Per-page state is (re)set in page-content.tex.
+
+\usepackage{ifthen}
+\input{preamble-common.tex}
+\providecommand{\pageparasha}{}
+\providecommand{\pagebookstart}{false}\providecommand{\pagechaplabel}{Chap.}\newlength{\catchwidth}
+
+% Book-opening title (pages with \pagebookstart{true}): printed at the top of
+% the text block, Hebrew name over English name. Sizes / gaps:
+% Room is limited by page 1 (least slack of the book-opening pages).
+\newcommand{\booktitlehebsize}{\fontsize{58}{64}\selectfont}
+\newcommand{\booktitleengsize}{\fontsize{32}{38}\selectfont}
+\newcommand{\booktitlebefore}{2mm}    % between the header and the title
+\newcommand{\booktitlegap}{4mm}       % between the two names
+\newcommand{\booktitleafter}{10mm}    % between the title and the text
+
+% Build the header line for odd vs. even parity.
+% Odd: chapters first, then english bookname.
+% Even: hebrew bookname first, then chapters.
+\fancypagestyle{bookpage}{%
+  \fancyhf{}%
+  \renewcommand{\headrulewidth}{0.4pt}%
+  \ifthenelse{\equal{\pageparity}{even}}{%
+    \fancyhead[R]{\begin{hebrew}\textenglish{\fontsize{10}{10}\selectfont\pagecfg}\end{hebrew}}%
+  }{%
+    \fancyhead[L]{\begin{hebrew}\textenglish{\fontsize{10}{10}\selectfont\pagecfg}\end{hebrew}}%
+  }%
+  \ifthenelse{\equal{\pagebookstart}{true}}{%
+    % Book-opening page: page number only, no rule, no chapter indicator -
+    % the title itself is printed at the top of the text block (below).
+    \renewcommand{\headrulewidth}{0pt}%
+  }{\ifthenelse{\equal{\pageparity}{odd}}{%
+    % Odd: gematrias א ב ... + chapters 1 2 ... + Chap. — BOOKNAME
+    \fancyhead[C]{\begin{hebrew}{\fontsize{11}{11}\selectfont%
+      {\hebrewfont\pagegematrias}\ \textenglish{\pagechapters}\ifthenelse{\equal{\pagechaplabel}{}}{}{\ \textenglish{\chaplabel{\pagechaplabel}}}\ —\ \textenglish{\pageengbook}%
+    }\end{hebrew}}%
+  }{%
+    % Even: HEBBOOK — [PARASHA —] gematrias Chap.chapters (page 2: בראשית — א Chap.1).
+    % \pageparasha is set only on Torah pages (from PARSHIOT.json); empty = omitted.
+    \fancyhead[C]{\begin{hebrew}{\fontsize{11}{11}\selectfont%
+      \pagehebbook\ —\ %
+      \ifthenelse{\equal{\pageparasha}{}}{}{\pageparasha\ —\ }%
+      \pagegematrias\ \textenglish{\ifthenelse{\equal{\pagechaplabel}{}}{}{\chaplabel{\pagechaplabel}}\pagechapters}%
+    }\end{hebrew}}%
+  }}%
+  % Footer: the catchword sits at the far left of the first line (zero-height
+  % overlay); the notes' first line stops 1em short of it, later lines use the
+  % full width (\parshape). Each note is unbreakable unless longer than a line
+  % (\masoranote). Large-type verses from a note (\pagefootverses) follow under
+  % a second rule, as in the scan (page 389).
+  \fancyfoot[C]{\begin{hebrew}%
+    \settowidth{\catchwidth}{\fontsize{14.5}{14.5}\selectfont\pagecatchword}%
+    \noindent\hbox to \textwidth{\rule{\footerrulewidth}{0.4pt}\hfill}\\[2mm]%
+    \begin{minipage}[t]{\textwidth}%
+      \setlength{\parindent}{0pt}%
+      \vbox to 0pt{\hbox to \textwidth{\hfill{\fontsize{14.5}{14.5}\selectfont\pagecatchword}}\vss}%
+      \raggedright
+      \parshape 2 0pt \dimexpr\textwidth-\catchwidth-1em\relax 0pt \textwidth
+      \pagefootnotes\par
+      \ifx\pagefootverses\empty\else
+        \vspace{1mm}\noindent\rule{\textwidth}{0.4pt}\par\vspace{1mm}%
+        \parshape 0 \raggedright\pagefootverses
+      \fi
+    \end{minipage}%
+  \end{hebrew}}%
+}
+% \pagestyle{bookpage} picks the header layout from the page's settings when it
+% runs, so page-content.tex selects it per page (after the settings).
+\flushbottom
+% Max stretch per line gap, in pt (2 = 30.6pt -> 32.6pt; fills 456 of 495
+% built pages completely).
+\newcommand{\bodylinestretch}{2}
+\newdimen\bodyslack \newdimen\bodystretchcap
+% Tallest notes block that stays in place under the rule; anything taller moves
+% the rule up (calibrated: 2 rows fit with >= 0.5in to the paper edge).
+\newdimen\footnotesroom \footnotesroom=40pt
+% Rule above the footer: starts at the right (Hebrew) edge of the text, as in
+% the scan (~0.4 of the text width; measured on pages 902, 919, 1043, 1200).
+\newcommand{\footerrulewidth}{0.4\textwidth}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1mm}
+
+% Per-page state that a page may change and the next page must get back (one-run
+% book): the text block height (moved up for tall notes / footer verses) and the
+% Hebrew font (narrowed by \condensebody).
+\newdimen\booktextheight \booktextheight=\textheight
+\let\bookhebrewfont\hebrewfont
+\makeatletter
+\newcommand{\bookpagereset}{%
+  \global\textheight=\booktextheight
+  \global\vsize=\textheight
+  \global\@colht=\textheight\global\@colroom=\textheight
+  \let\hebrewfont\bookhebrewfont}
+\makeatother

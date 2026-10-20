@@ -1,0 +1,32 @@
+# Everything the build generates (see README.md); all of it is remade by rebuild-all.
+# Paths are relative to this folder.
+
+# Per-page files: pageN.tex, pageN-body.tex, pageN-notes.tex, .pos, .pdf, ...
+# (page-style.tex, page-content.tex, page-master.tex, page-blank.tex are sources
+# and don't match: they have no digit after "page")
+/composite/work/retypeset-test/page[0-9]*
+
+# Book title page (made from title_page.txt)
+/composite/work/retypeset-test/title-page.*
+
+# Books: one-run (letteris-book.*, book-<a>-<b>-onerun.*) and merged
+/composite/work/retypeset-test/letteris-book.*
+/composite/work/retypeset-test/letteris-retypeset.pdf
+/composite/work/retypeset-test/book-*.pdf
+/composite/work/retypeset-test/book-*-onerun.*
+/composite/work/retypeset-test/book-outline.json
+/composite/work/retypeset-test/*.lock
+
+# Reports and logs
+/composite/work/retypeset-test/spacing-report.*
+/composite/work/retypeset-test/rebuild-all.log
+
+# Corpus update (update_ktiv.bat): the fresh pull, backups, report
+/composite/work/corpus-new/
+/composite/work/corpus-backup-*/
+/composite/work/corpus-update-report.txt
+
+# TeX by-products anywhere
+*.aux
+*.log
+*.xdv

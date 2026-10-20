@@ -1,0 +1,340 @@
+% Common preamble for all retypeset pages - geometry, fonts, base macros.
+% Each page includes this, then calls \setuppage{} with its chapter/catchword data.
+
+\usepackage[paperwidth=7.956in,paperheight=14.322in,
+            textwidth=6.655in,marginparwidth=0.36in,marginparsep=0.1in,
+            top=0.96in,bottom=1.56in,
+            headheight=15pt,headsep=6mm,footskip=6mm]{geometry}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{subscript}
+\usepackage{fancyhdr}
+\usepackage{tikz} % \cutletter (clipping)
+\setmainlanguage{hebrew}
+\setotherlanguage{english}
+
+\newfontfamily\hebrewfont{Magalith Tanach Pro}[Path = ../../vendor/fonts/]
+% Last-resort fit for an overflowing page (inserted by build-body.mjs at the
+% top of the body): the same font squeezed horizontally, e.g. 0.98 = letters 2% narrower.
+\newcommand{\condensebody}[1]{%
+  \renewfontfamily\hebrewfont{Magalith Tanach Pro}[Path = ../../vendor/fonts/, FakeStretch = #1]%
+  \hebrewfont\fontsize{27}{30.6pt}\selectfont}
+% Fit step after that (build-body.mjs STRICT_LEADING): lines exactly one
+% \baselineskip apart, even where tall accent stacks would make TeX add \lineskip.
+\newcommand{\strictleading}{\lineskiplimit=-\maxdimen}
+
+% Every verse/chapter number is a \marginpar, i.e. a float. LaTeX's default 18
+% float slots ran out on pages with many short verses (Psalms, Job) and the
+% extra numbers were silently dropped (page 1003, Ps 22:27-31).
+\extrafloats{100}
+% Verse number size in pt (the scan's are ~17pt; was 9).
+\newcommand{\vnumsize}{14}
+% Margin number set against the text: the margin box is right-aligned (Hebrew),
+% which suits odd pages (left margin) but put even-page numbers at the far side
+% of the box, and let a number wider than the box (34pt gematria קכא, page
+% 1072) spill into the text. Anchored on the text side, it spills outward.
+\newcommand{\margintotext}[1]{\hbox to \linewidth{\ifthenelse{\equal{\pageparity}{even}}{\hss#1}{#1\hss}}}
+\newcommand{\vnum}[1]{\leavevmode\marginpar{\margintotext{\textenglish{\fontsize{\vnumsize}{\vnumsize}\selectfont #1}}}}
+
+% Chapter heading on its own centered line, body-size text. The text line
+% before it ends ragged (like a petuchah): the body otherwise forces every
+% line full width (\parfillskip=0pt), which spread a chapter's short last
+% line edge to edge (page 74).
+% Optional #1 = the label before the number (default "Chap."; Psalms: "Psalm"),
+% set in small caps - a full capital, then smaller capitals - like the scan's
+% "Cap." / "Psal." (\chaplabel, also used in the running head).
+\newcommand{\chaplabel}[1]{\textsc{#1}}
+\newcommand{\chapheading}[3][Chap.]{{\parfillskip=0pt plus 1fil\par}{\centering\fontsize{27}{30.6pt}\selectfont{\hebrewfont #3}\ \textenglish{\chaplabel{#1}~#2}\par}}
+% Smaller chapter heading (20pt) for pages where space is tight
+\newcommand{\chapheadingsmall}[3][Chap.]{{\parfillskip=0pt plus 1fil\par}{\centering\fontsize{20}{22pt}\selectfont{\hebrewfont #3}\ \textenglish{\chaplabel{#1}~#2}\par}}
+
+% Chapter marker in margin, title-size. A gematria wider than \chapnumroom
+% (קכא at 34pt, page 1072) would run off the paper: the chapter's first line
+% gives up the excess on the margin's side (even pages: the line's start is
+% nudged in; odd pages: it ends early) and the number moves into that gap.
+% Outer margin 47pt minus \marginparsep: every 1-2 letter gematria fits (widest
+% מה 34.3pt); 3 letters (קיט 40.7pt .. קמח 50.3pt) nudge the first line.
+\newcommand{\chapnumroom}{36pt}
+\newdimen\chapnumexcess
+\newcommand{\chapnum}[1]{\leavevmode
+  \setbox0\hbox{\hebrewfont\fontsize{34}{34}\selectfont #1}%
+  \chapnumexcess=\dimexpr\wd0-\chapnumroom\relax
+  \ifdim\chapnumexcess>0pt
+    \ifthenelse{\equal{\pageparity}{even}}%
+      {\parshape 2 0pt \dimexpr\linewidth-\chapnumexcess\relax 0pt \linewidth}%
+      {\parshape 2 \chapnumexcess \dimexpr\linewidth-\chapnumexcess\relax 0pt \linewidth}%
+  \else \chapnumexcess=0pt \fi
+  \marginpar{\ifthenelse{\equal{\pageparity}{even}}%
+    {\hbox to \linewidth{\hss\copy0\kern-\chapnumexcess}}%
+    {\hbox to \linewidth{\kern-\chapnumexcess\copy0\hss}}}}
+
+% פ/ס at body size, each centred in the gap it makes (as in the scan).
+% The letters are printed only in the Torah: in the Prophets and Writings the
+% scan keeps the same gaps and open lines but leaves the letter out (Josh 1:9,
+% page 352; Job 2:10, page 1120), and a noted break keeps its masora circle
+% alone in the gap (Josh 4:1, page 356). build-body.mjs starts non-Torah pages
+% with \breaklettersfalse.
+\newif\ifbreakletters \breakletterstrue
+\newcommand{\breakletter}[2]{\ifbreakletters{#1#2}\else{\hebrewfont #2}\fi}
+% Petuchah (open gap): the rest of the line is left open, the פ in its middle.
+% Optional argument: marks printed on the letter (the masora circle when noted).
+% Tied to the preceding word (\unskip\nobreak) so the פ never sits alone on a
+% line; \nobreak + \null keep the closing half of the gap on the same line.
+\newcommand{\petuchah}[1][]{\openbreakletter{\breakletter{פ}{#1}}}
+% A setumah that ends a paragraph (before a chapter heading, portion end, ...):
+% build-body.mjs uses this instead of \setumah, so it too sits mid-gap.
+\newcommand{\setumahopen}[1][]{\openbreakletter{\breakletter{ס}{#1}}}
+% Both halves of the gap stretch equally; only the first has a minimum (a word
+% space), so on a full line the letter still ends the line, as it did before.
+\newcommand{\openbreakletter}[1]{\unskip\nobreak\hskip\fontdimen2\font plus 1fil{#1}\nobreak\hskip 0pt plus 1fil\null{\parfillskip=0pt\par}}
+% Setumah (closed gap): mid-line, or ending a line as in the scan (page 227,
+% Num 6:23 and 6:26) - never starting one. The line may break only after the ס:
+% the word space before it is replaced by an unbreakable one (\unskip\nobreak\ ),
+% and the gap after it follows the break point, so at a line end it is dropped
+% and the ס ends the line. The gap is 3em with the ס in its middle, and may
+% shrink to 1em, as in the scan, so a short word after it isn't pushed alone
+% onto a new line (page 121).
+\newcommand{\setumah}[1][]{\unskip\nobreak\ \hspace{1.5em minus 1em}\breakletter{ס}{#1}\penalty0\hspace{1.5em minus 1em}}
+% Setumah on a line widened by build-body.mjs (wide letters): fixed gap #2 on
+% each side, so the line's words take the space instead (page 227).
+\newcommand{\setumahtight}[2][]{\unskip\nobreak\ \hspace{#2}\breakletter{ס}{#1}\penalty0\hspace{#2}}
+% Setumah as the last thing on a page: nothing follows, so no gap - just
+% the ס with a space before it.
+\newcommand{\setumahpageend}[1][]{{} \breakletter{ס}{#1}}
+\newcommand{\parashabreak}{\par\vspace{4\baselineskip}}
+% Masora circle of an unrendered book marker (װ), standing alone just before
+% the book's first word.
+\newcommand{\masoracircle}{{\hebrewfont ֯}}
+
+% End of a weekly portion: "פ פ פ" (open) or "ס ס ס" (closed) on its own
+% centered line at chapter-heading size (small variant when the page is tight).
+% #2 = פ or ס; optional #1 = marks on the first letter (masora circle).
+% The text line before it ends ragged, like a petuchah.
+\newcommand{\sedrahend}[2][]{{\parfillskip=0pt plus 1fil\par}{\centering\fontsize{27}{30.6pt}\selectfont{\hebrewfont #2#1\ #2\ #2}\par}}
+\newcommand{\sedrahendsmall}[2][]{{\parfillskip=0pt plus 1fil\par}{\centering\fontsize{20}{22pt}\selectfont{\hebrewfont #2#1\ #2\ #2}\par}}
+% Last resort when even the small line overflows: inline at the end of the
+% portion's last text line, body size, no extra line. Open (פ פ פ) ends the
+% line like a petuchah; closed (ס ס ס) keeps the setumah gap and the text continues.
+\newcommand{\sedrahendinlineopen}[1][]{\unskip\nobreak\ {פ#1\ פ\ פ}{\parfillskip=0pt plus 1fil\par}}
+\newcommand{\sedrahendinlineclosed}[1][]{{} {ס#1\ ס\ ס}\hspace{3em}\penalty10000}
+
+% Book title for a book that begins mid-page (page 499, 2 Samuel): the previous
+% book's last line ends ragged, then a short rule, Hebrew name over English
+% name, a short rule, and the text. Small variant when the page is tight.
+% #1 = Hebrew name, #2 = English name. Sizes / gaps:
+\newcommand{\midtitlerule}{{\centering\rule{30mm}{1pt}\par}}
+\newcommand{\midtitlebefore}{4mm}     % previous text -> rule
+\newcommand{\midtitlerulegap}{4mm}    % rule <-> names
+\newcommand{\midtitlegap}{2mm}        % between the two names
+\newcommand{\midtitleafter}{4mm}      % rule -> text
+\newcommand{\midbooktitlebody}[6]{{\parfillskip=0pt plus 1fil\par}%
+  \vspace{#5}\midtitlerule\vspace{#6}%
+  {\centering{\fontsize{#3}{#3}\selectfont #1\par}\vspace{\midtitlegap}%
+   {\fontsize{#4}{#4}\selectfont\textenglish{#2}\par}}%
+  \vspace{#6}\midtitlerule\vspace{\midtitleafter}}
+\newcommand{\midbooktitle}[2]{\midbooktitlebody{#1}{#2}{50pt}{30pt}{\midtitlebefore}{\midtitlerulegap}}
+\newcommand{\midbooktitlesmall}[2]{\midbooktitlebody{#1}{#2}{36pt}{22pt}{1mm}{2mm}}
+
+% Sub-book title (the five books of Psalms, work/psalms-books.json), before the
+% sub-book's first chapter heading, as in the scan (page 1016, Ps 42): Hebrew
+% "ספר שני" over English "BOOK 2" (the scan's Latin "LIBER SECUNDUS"). The
+% previous line ends ragged. #1 = Hebrew, #2 = English. Sizes / gaps:
+\newcommand{\subtitlebefore}{4mm}     % previous text -> Hebrew
+\newcommand{\subtitlegap}{1mm}        % between the two lines
+\newcommand{\subtitleafter}{2mm}      % English -> chapter heading
+\newcommand{\subbooktitlebody}[5]{{\parfillskip=0pt plus 1fil\par}%
+  \vspace{#5}%
+  {\centering{\fontsize{#3}{#3}\selectfont{\hebrewfont #1}\par}\vspace{\subtitlegap}%
+   {\fontsize{#4}{#4}\selectfont\textenglish{#2}\par}}%
+  \vspace{\subtitleafter}}
+\newcommand{\subbooktitle}[2]{\subbooktitlebody{#1}{#2}{30pt}{20pt}{\subtitlebefore}}
+\newcommand{\subbooktitlesmall}[2]{\subbooktitlebody{#1}{#2}{22pt}{15pt}{1mm}}
+
+% End of a book whose successor starts on a new page: "חזק" in place of the
+% "פ פ פ" line, same sizes; the inline variant ends the last text line.
+\newcommand{\chazak}{{\parfillskip=0pt plus 1fil\par}{\centering\fontsize{27}{30.6pt}\selectfont{\hebrewfont חזק}\par}}
+\newcommand{\chazaksmall}{{\parfillskip=0pt plus 1fil\par}{\centering\fontsize{20}{22pt}\selectfont{\hebrewfont חזק}\par}}
+\newcommand{\chazakinline}{\unskip\nobreak\ {חזק}{\parfillskip=0pt plus 1fil\par}}
+
+% Masora finalis (word_notes.json reason 15), after a book's last verse, above
+% the footer (the page's masora notes stay in the footer). #1 = the summary
+% lines. Each \finalisline is one scan line: a long line is justified to the
+% full width, a short one is centered. \finalisbig = words set in large type
+% (**...** in the note).
+\newlength{\finaliswd}
+\newcommand{\finalissize}{\fontsize{22}{30.6pt}\selectfont}
+\newcommand{\finalisbig}[1]{{\fontsize{28}{30.6pt}\selectfont #1}}
+\newcommand{\finalisfullline}{0.8\linewidth}
+\newcommand{\finalisline}[1]{{\finalissize
+  \settowidth{\finaliswd}{\beginR #1\endR}%
+  \ifdim\finaliswd>\finalisfullline \hbox to \linewidth{\beginR #1\endR}%
+  \else \hbox to \linewidth{\hfil\beginR #1\endR\hfil}\fi}}
+% A חזק line other than plain חזק (חזק ונתחזק, ...), at חזק size.
+\newcommand{\finalischazak}[1]{{\centering\fontsize{27}{30.6pt}\selectfont{\hebrewfont #1}\par}}
+\newcommand{\finalisblock}[1]{{\parfillskip=0pt plus 1fil\par}%
+  \vspace{3mm}#1\par
+  \vspace{3mm}{\centering\rule{4cm}{1.2pt}\par}\vspace{3mm}}
+
+% Songs (Exod 15, ...), laid out line by line from the scan by build-body.mjs
+% (work/song-layouts.json). The text before a song ends ragged; each scan line
+% is forced (\songbreak) and its blocks pushed apart (\songgap), so 2 blocks
+% sit flush right / flush left and the middle one of 3 between them. A
+% one-block line is justified like any other body line.
+\newcommand{\songstart}{\ifhmode{\parfillskip=0pt plus 1fil\par}\fi}
+\newcommand{\songbreak}{\unskip\break}
+\newcommand{\songgap}{\unskip\hfill}
+% An empty first block: the line's only block goes flush left (Esth 9:7, page 1199).
+\newcommand{\songemptyblock}{\mbox{}\hfill}
+% Two-column songs (Eccl 3:2-8): the second block sits in a box whose right
+% edge is #1 of the line width from the left edge, so every line's second
+% block starts at the same column, as in the scan (page 1177).
+\newcommand{\songcolumn}[1]{\unskip\hfill\hbox to #1\linewidth\bgroup}
+\newcommand{\songcolumnend}{\unskip\hfill\egroup}
+
+% A weekly portion that ends with no פ/ס mid-book (Gen47:27): the line ends
+% ragged and the next portion starts on a new line, with no marker printed.
+\newcommand{\portionbreak}{{\parfillskip=0pt plus 1fil\par}}
+
+% Line filling with wide letterforms (jalt), chosen letter by letter by
+% build-body.mjs for lines whose interword space would otherwise be too large.
+% Applied to one letter (+ its marks) at a time: jalt widens every covered
+% glyph it touches, so it must never span more than the chosen letter.
+\newcommand{\wide}[1]{{\addfontfeature{RawFeature=+jalt}#1}}
+
+% Measurement marks for that choice (build-body.mjs measure pass only): each
+% word part is bracketed by \wb/\we, which record their page position at
+% shipout into pageN.pos. \LR keeps "save position, then write" in that order
+% (in right-to-left text the pair would otherwise be reversed and every write
+% would report the previous mark's position).
+\newwrite\posfile
+\newcommand{\posopen}{\immediate\openout\posfile=page\pagecfg.pos}
+\newcommand{\wb}[1]{\LR{\pdfsavepos\write\posfile{b #1 \the\pdflastxpos\space\the\pdflastypos}}}
+\newcommand{\we}[1]{\LR{\pdfsavepos\write\posfile{e #1 \the\pdflastxpos\space\the\pdflastypos}}}
+% Body-font metrics for the same pass: normal space, a reference letter, and
+% each wide-capable letter's normal and wide width (#1 = the letters).
+\newcommand{\posmetrics}[1]{%
+  \immediate\write\posfile{space \the\fontdimen2\font}%
+  \setbox0\hbox{ב}\immediate\write\posfile{unit \the\wd0}%
+  \posmetricsloop#1\relax}
+\def\posmetricsloop#1{\ifx\relax#1\else
+  \setbox0\hbox{#1}\setbox2\hbox{\wide{#1}}%
+  \immediate\write\posfile{letter #1 \the\wd0 \space\the\wd2}% (the plain space ends the box number)
+  \expandafter\posmetricsloop\fi}
+
+% Tolerance settings.
+\tolerance=9999
+\emergencystretch=2em
+
+% Sized per context.
+\newcommand{\largeletter}[1]{{\hebrewfont\fontsize{34}{20}\selectfont #1}}
+\newcommand{\smallletter}[1]{{\hebrewfont\fontsize{16}{20}\selectfont #1}}
+% Hanging letter (נ׳ תלויה, Judg 18:30; ע׳ תלויה, Ps 80:14, Job 38:13,15): small
+% size (\hangsize), raised so its top stands \hangabove (a fraction of the
+% full-size letter height) above the tops of the full-size letters.
+% \hangletter{letter}{letter + marks above}{marks below} (build-body.mjs
+% hangLetterTex): the marks above rise with the small letter; the marks below
+% stay full size on the line. They are set on \hangcarrier, a letter with a
+% flat base, drawn clipped to below its depth so only the marks show (the
+% letter's own outline can't be clipped: ע's hiriq tucks up into its tail,
+% Job 38:13). The space is the full-size letter's width (or the small
+% letter's, if wider), with the marks and the small letter centred in it.
+\newcommand{\hangcarrier}{ב}
+\newsavebox\hangbase \newsavebox\hangup \newsavebox\hanglow
+\newdimen\hangraise \newdimen\hangwidth
+\newcommand{\hangsize}{20}
+\newcommand{\hangabove}{0.2}
+\newcommand{\hangletter}[3]{\sbox\hangbase{#1}\sbox\hanglow{\hangcarrier#3}%
+  \sbox\hangup{\hebrewfont\fontsize{\hangsize}{20}\selectfont #2}%
+  \setbox0\hbox{ב}\setbox2\hbox{\hebrewfont\fontsize{\hangsize}{20}\selectfont ב}%
+  \hangraise=\dimexpr\ht0-\ht2+\hangabove\ht0\relax
+  \hangwidth=\ifdim\wd\hangbase>\wd\hangup \wd\hangbase\else\wd\hangup\fi
+  \LR{\tikz[baseline=0pt]{%
+  \useasboundingbox (0,-\dp\hanglow) rectangle (\hangwidth,\ht0);
+  \node[inner sep=0,anchor=base west] at ({(\hangwidth-\wd\hangup)/2},\hangraise) {\usebox\hangup};
+  \begin{scope}\clip (-1em,-2em) rectangle ([xshift=1em]\hangwidth,{-\dp0-0.01em});
+    \node[inner sep=0,anchor=base west] at ({(\hangwidth-\wd\hanglow)/2},0) {\usebox\hanglow};\end{scope}}}}
+% Cut letter (ו׳ קטיעה, Num 25:12): \cutletter{cut}{gap}{shift}{letter}. The
+% glyph is drawn twice in the same place: one copy clipped to below `cut`
+% (height above the baseline) and moved right by `shift`, the other clipped to
+% above cut+gap - a gap in the stem with the lower piece offset. Marks on the
+% letter (masora circle) stay with the upper piece; the width is unchanged.
+% Values from build-body.mjs (CUT_LETTER_*).
+\newsavebox\cutbox
+\newcommand{\cutletter}[4]{\sbox\cutbox{#4}\LR{\tikz[baseline=0pt]{%
+  \useasboundingbox (0,0) rectangle (\wd\cutbox,\ht\cutbox);
+  \begin{scope}\clip (-1em,-1em) rectangle ([xshift=1em]\wd\cutbox,#1);
+    \node[inner sep=0,anchor=base west] at (#3,0) {\usebox\cutbox};\end{scope}
+  \begin{scope}\clip (-1em,{#1+#2}) rectangle ([xshift=1em]\wd\cutbox,2em);
+    \node[inner sep=0,anchor=base west] at (0,0) {\usebox\cutbox};\end{scope}}}}
+
+% Qere/Ketiv at 3/4 body size (20.25pt against 27pt).
+\newcommand{\qerisub}[1]{\raisebox{-0.5ex}{{\hebrewfont\fontsize{20.25}{20.25}\selectfont #1}}}
+\newcommand{\qerisup}[1]{\raisebox{0.8ex}{{\hebrewfont\fontsize{20.25}{20.25}\selectfont #1}}}
+
+% Masora-note apparatus (notes flow horizontally on one line, separated by spaces).
+\newcommand{\pagefootnotes}{}
+% Each note is one unbreakable box (pointer + text); footer lines break only
+% between notes - except a note too long for a line, which wraps inside itself
+% like ordinary text (Josh 21:36, page 389).
+\newsavebox{\masoranotebox}
+\newcommand{\masoranotetext}[2]{{\fontsize{12}{14.5}\selectfont \textdegree~\textenglish{#1}~#2}}
+\newcommand{\masoranote}[2]{\sbox{\masoranotebox}{\masoranotetext{#1}{#2}}%
+  \ifdim\wd\masoranotebox>0.85\textwidth \masoranotetext{#1}{#2}\else\usebox{\masoranotebox}\fi\hspace{2em}}
+% A note's **...** part (verses the scan prints under the notes, e.g. the two
+% verses after Josh 21:35 found only in some books): build-body.mjs moves it to
+% \pagefootverses, set in large type below a second rule, with an asterisk.
+\newcommand*{\pagefootverses}{}  % * (not \long): page-master tests it with \ifx against \empty
+\newcommand{\footverses}[1]{{\fontsize{22}{27}\selectfont\hebrewfont *#1\par}}
+
+% Build chapter-list header: takes a comma-separated list of chapter numbers
+% (arabic) and a corresponding comma-separated list of gematria letters,
+% outputs the formatted header line for odd/even pages.
+% Internal macro to format a single chapter pair (arabic + gematria).
+\def\@chapitem#1#2{ #2 \ \textenglish{#1}}
+
+% Build a header line from chapter lists (both comma-separated), odd or even parity.
+% #1 = parity (odd/even), #2 = chapter numbers (comma-sep), #3 = gematrias (comma-sep),
+% #4 = english book name
+\newcommand{\buildcapheader}[4]{%
+  \ifthenelse{\equal{#1}{odd}}{%
+    % Odd: gematrias first (in visual RTL order so they read first),
+    % then arabic numbers, then book name.
+    {\hebrewfont #3}\ \textenglish{#2} \ \textenglish{Cap.} — \textenglish{#4}%
+  }{%
+    % Even: hebrew bookname first, then chapters.
+    \textenglish{Cap.} \textenglish{#2} — {\hebrewfont #3}%
+  }%
+}
+
+% Main setup macro: call this once per page with chapter/catchword data.
+% #1 = odd|even, #2 = hebrew bookname (e.g., בראשית), #3 = english bookname (e.g., GENESIS)
+% #4 = chapters (comma-sep arabic, e.g., 1,2), #5 = gematrias (comma-sep hebrew, e.g., א,ב)
+% #6 = catchword for footer
+\newcommand{\setuppage}[6]{%
+  \ifthenelse{\equal{#1}{even}}{\reversemarginpar}{}%
+  \fancypagestyle{bookpage}{%
+    \fancyhf{}%
+    \renewcommand{\headrulewidth}{0.4pt}%
+    \ifthenelse{\equal{#1}{even}}{%
+      \fancyhead[R]{\begin{hebrew}\textenglish{\fontsize{10}{10}\selectfont\thepage}\end{hebrew}}%
+    }{%
+      \fancyhead[L]{\begin{hebrew}\textenglish{\fontsize{10}{10}\selectfont\thepage}\end{hebrew}}%
+    }%
+    \fancyhead[C]{\begin{hebrew}{\fontsize{11}{11}\selectfont%
+      \ifthenelse{\equal{#1}{odd}}{%
+        {\hebrewfont #5}\ \textenglish{#4} \ \textenglish{Cap.} — \textenglish{#3}%
+      }{%
+        \textenglish{#2} — \textenglish{Cap.} \textenglish{#4} \ {\hebrewfont #5}%
+      }%
+    }\end{hebrew}}%
+    \fancyfoot[C]{\begin{hebrew}%
+      \rule{\textwidth}{0.4pt}\\[0.5mm]%
+      \noindent\begin{tabular*}{\textwidth}{@{}p{0.5\textwidth}@{\extracolsep{\fill}}l@{}}
+        \raggedright{\fontsize{10}{12}\selectfont\pagefootnotes} & {\fontsize{10}{12}\selectfont #6}%
+      \end{tabular*}%
+    \end{hebrew}}%
+  }%
+  \pagestyle{bookpage}%
+  \setlength{\parindent}{0pt}%
+  \setlength{\parskip}{1mm}%
+}

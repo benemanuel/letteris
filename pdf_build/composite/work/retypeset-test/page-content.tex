@@ -1,0 +1,70 @@
+% One page's content, shared by single pages (page-master.tex) and the one-run
+% book (build-book.mjs): reset per-page state, set the margin side, then the
+% page's masora notes, book title and body. Uses the page's settings from
+% pageN.tex (\pagecfg, \pageparity, ...); styles come from page-style.tex.
+
+% Per-page state back to the book's defaults (a previous page in the same run
+% may have shortened the text block or narrowed the letters).
+\bookpagereset
+% Header / footer for this page's settings (odd/even, book opening).
+\pagestyle{bookpage}
+% Page parity: verse numbers in the outer margin (even pages: right).
+\ifthenelse{\equal{\pageparity}{even}}{\reversemarginpar}{\normalmarginpar}
+
+% Load this page's masora notes and body text.
+\input{page\pagecfg-notes.tex}
+% Footer verses (\pagefootverses) hang below the notes: shorten the text block
+% by their height so the footer moves up and they stay on the paper.
+% Masora notes taller than \footnotesroom (rows below the rule, measured as the
+% footer sets them) would run toward the paper edge (page 902: 5 rows, the last
+% one cut off). Move the rule up by the excess instead, into the text block.
+\setbox0\vbox{\hsize\textwidth\begin{hebrew}%
+  \settowidth{\catchwidth}{\fontsize{14.5}{14.5}\selectfont\pagecatchword}%
+  \setlength{\parindent}{0pt}\raggedright
+  \parshape 2 0pt \dimexpr\textwidth-\catchwidth-1em\relax 0pt \textwidth
+  \pagefootnotes\par\end{hebrew}}%
+\ifdim\dimexpr\ht0+\dp0\relax>\footnotesroom
+  \global\advance\textheight by -\dimexpr\ht0+\dp0-\footnotesroom\relax
+  \global\vsize=\textheight
+  \makeatletter\global\@colht=\textheight\global\@colroom=\textheight\makeatother
+\fi
+\ifx\pagefootverses\empty\else
+  \setbox0\vbox{\hsize\textwidth\begin{hebrew}\pagefootverses\end{hebrew}}%
+  \global\advance\textheight by -\dimexpr\ht0+\dp0+3mm\relax
+  \global\vsize=\textheight
+  \makeatletter\global\@colht=\textheight\global\@colroom=\textheight\makeatother
+\fi
+
+\begin{hebrew}
+\ifthenelse{\equal{\pagebookstart}{true}}{%
+  \vspace*{\booktitlebefore}%
+  {\centering
+    {\booktitlehebsize\pagehebbook\par}\vspace{\booktitlegap}
+    {\booktitleengsize\textenglish{\pageengbook}\par}}%
+  \vspace{\booktitleafter}%
+}{}
+\fontsize{27}{30.6pt}\selectfont
+% Vertical fill: each line gap may stretch by up to \bodylinestretch so the last
+% line sits on the bottom of the text block instead of leaving a gap above the
+% notes. Whatever the cap cannot cover stays below the last line.
+\baselineskip=30.6pt plus 1pt \lineskip=1pt plus 1pt
+
+{\parfillskip=0pt
+\input{page\pagecfg-body.tex}\par}
+% Vertical space used by the body, read by build-body.mjs for spacing-report.json
+% (on an overflowing page these are the last page's figures).
+\typeout{SPACING goal=\the\pagegoal\space total=\the\pagetotal\space baselineskip=\the\baselineskip}
+% \pagestretch = 1pt per stretchable gap. Slack beyond the cap goes in as a
+% rigid space at the bottom; the forced break (with \flushbottom) then spreads
+% the rest over the gaps.
+% (Own registers: LaTeX's \vspace* clobbers \dimen0.)
+\ifdim\pagegoal<\maxdimen\ifdim\pagestretch>0pt
+  \bodyslack=\dimexpr\pagegoal-\pagetotal\relax
+  \bodystretchcap=\bodylinestretch\pagestretch
+  \ifdim\bodyslack>0pt
+    \ifdim\bodyslack>\bodystretchcap \nobreak\vskip\dimexpr\bodyslack-\bodystretchcap\relax\fi
+    \penalty-10000
+  \fi
+\fi\fi
+
+\end{hebrew}

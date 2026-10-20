@@ -1,0 +1,26 @@
+% Master template for any retypeset page (1–1384).
+% Usage: Create pageN.tex with ONLY:
+%
+%   \def\pagecfg{N}  % page number: 1, 2, 3, ...
+%   \def\pageparity{odd}  % or even
+%   \def\pagehebbook{בראשית}  % hebrew book name
+%   \def\pageparasha{בראשית}  % Torah parasha(s) on this page, or empty
+%   \def\pageengbook{GENESIS}  % english book name
+%   \def\pagechapters{1,2}  % comma-sep chapter numbers (arabic): 1,2,3
+%   \def\pagechaplabel{Chap.}  % word before the chapter numbers, small caps; empty = none (Psalms: the book name says it, as in the scan's "PSALMI 90. 91.")
+%   \def\pagegematrias{א,ב}  % comma-sep gematrias: א,ב,ג
+%   \def\pagecatchword{catchword}  % first word of next page
+%   \def\pagebookstart{true}  % page opens a book: title header (default false)
+%   \input{page-master.tex}
+%
+% Then run: xelatex -interaction=nonstopmode pageN.tex
+%
+% The master does the rest: styles from page-style.tex (preamble, header/footer),
+% the page itself from page-content.tex (notes, title, body). The one-run book
+% (build-book.mjs) uses the same two files, so the page looks the same either way.
+
+\documentclass[12pt]{article}
+\input{page-style.tex}
+\begin{document}
+\input{page-content.tex}
+\end{document}

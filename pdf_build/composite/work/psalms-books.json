@@ -1,0 +1,42 @@
+{
+  "_note": "The five books of Psalms (source: psalms_books.txt in the project root). build-body.mjs prints a sub-book title before each book's first chapter. firstChapter/lastChapter are Psalm numbers; range is the Hebrew chapter range, for reference. chapterLabel replaces \"Cap.\" in the chapter headings.",
+  "book": "Psalms",
+  "chapterLabel": "Psalm",
+  "books": [
+    {
+      "heb": "ספר ראשון",
+      "eng": "BOOK ONE",
+      "firstChapter": 1,
+      "lastChapter": 41,
+      "range": "א–מא"
+    },
+    {
+      "heb": "ספר שני",
+      "eng": "BOOK TWO",
+      "firstChapter": 42,
+      "lastChapter": 72,
+      "range": "מב–עב"
+    },
+    {
+      "heb": "ספר שלישי",
+      "eng": "BOOK THREE",
+      "firstChapter": 73,
+      "lastChapter": 89,
+      "range": "עג–פט"
+    },
+    {
+      "heb": "ספר רביעי",
+      "eng": "BOOK FOUR",
+      "firstChapter": 90,
+      "lastChapter": 106,
+      "range": "צ–קו"
+    },
+    {
+      "heb": "ספר חמישי",
+      "eng": "BOOK FIVE",
+      "firstChapter": 107,
+      "lastChapter": 150,
+      "range": "קז–קנ"
+    }
+  ]
+}

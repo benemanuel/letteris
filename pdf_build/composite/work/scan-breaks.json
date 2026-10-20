@@ -1,0 +1,6 @@
+{
+  "_note": "Petuchah / setumah where the vienna-1882 scan differs from the corpus. `word` is the corpus marker word (ײ petuchah, ױ setumah) as Book+chapter:verse#n; `scan` is what the scan has there: \"none\" (the text runs on, no break), \"setumah\" or \"petuchah\". Read by retypeset-test/build-body.mjs; a noted marker keeps its footnote (and its masora circle, before the next word, when \"none\").",
+  "breaks": [
+    { "word": "Neh5:18#26", "scan": "none", "page": 1256, "checked": "2026-10-19: the scan runs 5:19 on after הזה: with an ordinary verse space" }
+  ]
+}
