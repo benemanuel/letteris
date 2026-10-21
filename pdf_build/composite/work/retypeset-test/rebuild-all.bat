@@ -28,7 +28,7 @@ echo [1/5] page configs
 node create-page-config.js %START% %END% >> rebuild-all.log 2>&1
 if errorlevel 1 goto :failed
 
-echo [2/5] page bodies and PDFs (this takes a while)
+echo [2/5] page bodies and PDFs (this takes a while [around 6 hours!])
 node build-body.mjs %START% %END% >> rebuild-all.log 2>&1
 if errorlevel 1 goto :failed
 

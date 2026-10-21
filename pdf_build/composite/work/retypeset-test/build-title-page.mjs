@@ -33,7 +33,7 @@ const TOP_STYLES = [
 ];
 const BOTTOM_STYLES = [
   { size: 28, above: 0 },                 // place (scan: וויען)
-  { size: 38, above: 10 },                // publisher line (scan: בדפוס האדון ...)
+  { size: 34, above: 10 },                // publisher line, a drop below the editor's name (40) (scan: בדפוס האדון ...)
   { size: 20, above: 7 },                 // year
   { size: 10, above: 8, english: true },  // font credit (new), small, left to right
 ];

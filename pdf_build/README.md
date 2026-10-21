@@ -43,6 +43,7 @@ pdf_build/
 | `build-title-page.mjs` | 3. the book's title page, from `title_page.txt` |
 | `merge-book.mjs` | 4. merges the page PDFs, adds bookmarks |
 | `build-book.mjs` | 5. sets the whole book again in one XeLaTeX run (smaller file) |
+| `swap-title-page.bat` / `.py` | rebuilds the title page and puts it into an already-built book (no full rebuild) |
 | `tanach-lib.mjs` | shared code and all data paths |
 | `build.bat`, `config.bat`, `maketex.bat`, `allpdf.bat` | shortcuts, see below |
 | `audit-seams.mjs` | checks page seams against the scan's catchwords |
@@ -125,6 +126,11 @@ Edit `title_page.txt` (in this folder's root), one printed line per line:
 Then run `node build-title-page.mjs` (or `rebuild-all`, which runs it
 whenever the range starts at page 1). Sizes and spacing of each line are in
 the config block at the top of `build-title-page.mjs`.
+
+To update the title page of a book you have already built, run
+`swap-title-page` (or `swap-title-page book-1-50-onerun.pdf` for another
+book). It rebuilds the title page and replaces page 1 in place; bookmarks
+and every other page stay as they are.
 
 ### Change the text or the notes
 
